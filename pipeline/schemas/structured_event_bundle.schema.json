@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "structured_event_bundle.schema.json",
+  "title": "Structured Event Extraction Bundle v0.2",
+  "type": "object",
+  "$defs": {
+    "event_record": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "candidate_event_id",
+        "company_id",
+        "event_type",
+        "pdf_page_start",
+        "pdf_page_end",
+        "primary_evidence_id"
+      ],
+      "additionalProperties": true
+    },
+    "transaction_record": {
+      "type": "object",
+      "required": [
+        "transaction_id",
+        "event_id",
+        "company_id",
+        "transaction_type"
+      ],
+      "additionalProperties": true
+    },
+    "party_record": {
+      "type": "object",
+      "required": [
+        "party_id",
+        "event_id",
+        "party_name_raw",
+        "party_role",
+        "source_evidence_id"
+      ],
+      "additionalProperties": true
+    },
+    "numeric_fact": {
+      "type": "object",
+      "required": [
+        "numeric_fact_id",
+        "event_id",
+        "fact_type",
+        "raw_value_text",
+        "source_evidence_id"
+      ],
+      "additionalProperties": true
+    }
+  }
+}
