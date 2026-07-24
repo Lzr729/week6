@@ -1,0 +1,423 @@
+{
+  "layout": "COMPACT_FLAT",
+  "source_file_count": 68,
+  "compact_data_file_count": 5,
+  "record_counts": {
+    "chapter_location": 6419,
+    "candidate_events": 205,
+    "structured_events": 457,
+    "numeric_validation": 122,
+    "pevc_paths": 94
+  },
+  "source_files": [
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "85a9e5ae9b906fe6817db0530980a10f1e1f5018be7df1496d4e81ad11529e53",
+      "size_bytes": 3929
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0002-01.txt",
+      "stage": "candidate_events",
+      "sha256": "f561dd1e6b21ec8ffab383e65e45cf44aa63a6af519bbfe6b3ceecb7d6d46f9b",
+      "size_bytes": 749
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0003-01.txt",
+      "stage": "candidate_events",
+      "sha256": "cc5cde206900c6900410454c557800defec72499499ac8735e2c122ea46dd6c6",
+      "size_bytes": 3728
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0003-02.txt",
+      "stage": "candidate_events",
+      "sha256": "478d44957859dbe2e191fa6daecac98c9630dc91dda298b258d032b124571376",
+      "size_bytes": 194
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0003-03.txt",
+      "stage": "candidate_events",
+      "sha256": "4263c39f4afc3a6f2e3574cfac80e01fa0be2622dc55af585cb0ed29642b9369",
+      "size_bytes": 1281
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0004-01.txt",
+      "stage": "candidate_events",
+      "sha256": "9133e20fe629ced1b7b7658d65cb092f0f9613b5a15bb8a2646047375468ad49",
+      "size_bytes": 1111
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_001282_EVD-001282-0004-02.txt",
+      "stage": "candidate_events",
+      "sha256": "467bd22841a5a5c73599b3eda23dbb666d12c140113752d67015a8f30f13e27d",
+      "size_bytes": 1618
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "e211505f6fdad37009e52ffc13c6de2487910cc4752f49f7a59c342828de7ffb",
+      "size_bytes": 343
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0002-01.txt",
+      "stage": "candidate_events",
+      "sha256": "881cda031c73206a553e266bd34f86b5cdc2a01be038860496669f113965e704",
+      "size_bytes": 93
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0002-02.txt",
+      "stage": "candidate_events",
+      "sha256": "c73051fb8091924399c57dcdb4549c14376367aa6704931f3f7c03f174410f11",
+      "size_bytes": 852
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0002-03.txt",
+      "stage": "candidate_events",
+      "sha256": "0395e28476338f5742d5277118f0033f687b5ba8762bcb58d0a1d3fa9510dcda",
+      "size_bytes": 2347
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0003-01.txt",
+      "stage": "candidate_events",
+      "sha256": "403e180e18601134fa4650550af059c0220a67e6cf06b664fcce2ace297fcd13",
+      "size_bytes": 1554
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0004-01.txt",
+      "stage": "candidate_events",
+      "sha256": "b0f79a8e6bc512e9172090862bc915829ddf98a8ef82ee4a630d02c5091a6ff0",
+      "size_bytes": 2390
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0005-01.txt",
+      "stage": "candidate_events",
+      "sha256": "e738ddd6ccf42c5f1ec4e84c01dd07a8485e9edd0b6897168e7c38c199c1a87f",
+      "size_bytes": 959
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0006-01.txt",
+      "stage": "candidate_events",
+      "sha256": "5e8724fa485b2e75f1ccaa9a080eaaf1267d4e85de1ed3e3bc0ac6561e4c4839",
+      "size_bytes": 252
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_301581_EVD-301581-0006-02.txt",
+      "stage": "candidate_events",
+      "sha256": "15655f2021035531ef3eced23a43a340c9dceb2c78344e96c59c7568464dcb64",
+      "size_bytes": 48
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "ee22fc1ea1154bf2529b335d9c7ec98eed79787ac995093152c1a57678e7deaa",
+      "size_bytes": 1553
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0002-01.txt",
+      "stage": "candidate_events",
+      "sha256": "c4ffcebbdd43ecf0c99b84f03821191719fd89ae7be52e074995e382394c4d27",
+      "size_bytes": 610
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0003-01.txt",
+      "stage": "candidate_events",
+      "sha256": "408bb4a45d964c26a77f76f498c27574a42fc1031505efc2ae50a61582068f8d",
+      "size_bytes": 2764
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0003-02.txt",
+      "stage": "candidate_events",
+      "sha256": "41b4acb80a8f2122ff041240c907c49b95bf672634fd308d46f489d2dd490a1d",
+      "size_bytes": 191
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0004-01.txt",
+      "stage": "candidate_events",
+      "sha256": "d5421858e04342cba32015a3949e1b54155a600daa4f68c63bc7cbc96b3ae2cf",
+      "size_bytes": 1405
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0004-02.txt",
+      "stage": "candidate_events",
+      "sha256": "fa37a2d2dea5dd154e5552515cc89c2e20c150da498bdc25b81904e28fb82a6f",
+      "size_bytes": 47
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0005-01.txt",
+      "stage": "candidate_events",
+      "sha256": "974ab419b5dd1b1681c7ac31463abf23a7bb49dd6893810a315f888a09aaf897",
+      "size_bytes": 2066
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_603418_EVD-603418-0006-01.txt",
+      "stage": "candidate_events",
+      "sha256": "9b066848694c55be526a59522eb98ab1f246e3abe1e89b78661ec40508ce1d62",
+      "size_bytes": 163
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "70ceee6f0ba148f3df6e686255723b5c311ca5be89b647685f48a64d6aab478f",
+      "size_bytes": 2161
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0002-01.txt",
+      "stage": "candidate_events",
+      "sha256": "14819ba59e8d335607e9b759f3667580d81875e03305296e0d6a069e490e9504",
+      "size_bytes": 5140
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0002-02.txt",
+      "stage": "candidate_events",
+      "sha256": "8d970a22be7b9e39d7cb548ec398613bfab870aaed1150985e26d83a046052c2",
+      "size_bytes": 2405
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0002-03.txt",
+      "stage": "candidate_events",
+      "sha256": "dabdd15568cd7c979e3a17e3df67610baff4e0a64f731c93eaef84903dc1819a",
+      "size_bytes": 433
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0003-01.txt",
+      "stage": "candidate_events",
+      "sha256": "23fc40eb6901f560de09d6c61b0d43029464d42dc8ca69f7e01a971b82af1239",
+      "size_bytes": 2051
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0004-01.txt",
+      "stage": "candidate_events",
+      "sha256": "2812269003c3691069d6615bc66450a8a6c15c51b10b3e8bea41561c6ecbacbb",
+      "size_bytes": 2414
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0005-01.txt",
+      "stage": "candidate_events",
+      "sha256": "db5a04f9ac9cba51dc88a1a2e2c77f5e8080b8485aa2950b1a7fcb8b860a531e",
+      "size_bytes": 725
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0006-01.txt",
+      "stage": "candidate_events",
+      "sha256": "7d74ed22e90d16e5f045897469c27b687691fa4bdb44f993754ae7b839596ce0",
+      "size_bytes": 3317
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688758_EVD-688758-0007-01.txt",
+      "stage": "candidate_events",
+      "sha256": "fd3c407db678b05b94d4dfe83600dac30e60e1d963b89ab9d47c12a850f7def5",
+      "size_bytes": 2173
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688775_EVD-688775-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "29d8dc3cd001d8015364b107ec605f89c66d2706661545e2613b4445fc87ed5c",
+      "size_bytes": 544
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688775_EVD-688775-0002-01.txt",
+      "stage": "candidate_events",
+      "sha256": "b05b24f96953eaa77f6fbe64b0310c77e0ee4512b1273eca5e8367cc52210377",
+      "size_bytes": 2596
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_688775_EVD-688775-0003-01.txt",
+      "stage": "candidate_events",
+      "sha256": "024cb0b1f65120634c52f88a0ca6212b5914c072aa64da33485d22078dc501a4",
+      "size_bytes": 344
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_920100_EVD-920100-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "6a85ea3c3c33ae47dea378cb1e97104764d65016cd36196e4454db9948e89091",
+      "size_bytes": 287
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_920116_EVD-920116-0001-01.txt",
+      "stage": "candidate_events",
+      "sha256": "154ca1359c3dde08c456601011a313b4be758d377971b65a5be67e22bad23351",
+      "size_bytes": 293
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_920116_EVD-920116-0001-02.txt",
+      "stage": "candidate_events",
+      "sha256": "94bd0b6d2a3a05de189e5e76fb06e09470389bbaa8fcb984c3176fdd23c3b9dc",
+      "size_bytes": 1874
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_920116_EVD-920116-0001-03.txt",
+      "stage": "candidate_events",
+      "sha256": "33ce653cd4bcd9c05483da11bff4ed34b275412a011caf9bc579b75434dd8571",
+      "size_bytes": 1831
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_920116_EVD-920116-0001-04.txt",
+      "stage": "candidate_events",
+      "sha256": "fa1dbe3bbcce7163d330a381499ea0ce1c6f7d6ef22a4f468c789ba5754bd135",
+      "size_bytes": 1772
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_920116_EVD-920116-0001-05.txt",
+      "stage": "candidate_events",
+      "sha256": "549dec3571b5fcfd4d7f0a33df1684822838cd2084e494e2c440ce71df45c6db",
+      "size_bytes": 1331
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_candidate_events_auto.jsonl",
+      "stage": "candidate_events",
+      "sha256": "23883fca0affe17702bb22771dc16e4731f68d13313289ec2219943acc0a3b64",
+      "size_bytes": 37862
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_candidate_evidence_auto.jsonl",
+      "stage": "candidate_events",
+      "sha256": "c27b2b7ba7bfdbe2ba4067df3b1ab2179daa32fa6f3ef7c8b7a6881153cd4e0d",
+      "size_bytes": 95896
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_candidate_fragments_manifest.json",
+      "stage": "candidate_events",
+      "sha256": "5905241231d7f8997cb0ba035c6b9bdfdfa21c7f4242e6c49a85d0e9e583dff1",
+      "size_bytes": 19785
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_coverage_gaps_auto.jsonl",
+      "stage": "candidate_events",
+      "sha256": "08ed658a266a9b2f0331f08818828e4532460e0f9bebce7198381cfe62313d87",
+      "size_bytes": 2273
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_negative_disclosures_auto.jsonl",
+      "stage": "candidate_events",
+      "sha256": "0f2c8e20cec16178283c393e36547424692c1dd50ee4a4894e1435cabe9974cf",
+      "size_bytes": 1179
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_shareholder_evidence_auto.jsonl",
+      "stage": "candidate_events",
+      "sha256": "03598fff013ebca47e9ff96b4b931a48d35f65316b813ae0ae0c97c247b434d8",
+      "size_bytes": 134042
+    },
+    {
+      "source_file": "candidate_events_CANDIDATEEVENT_V11_20260723_224502_summary_disclosures_auto.jsonl",
+      "stage": "candidate_events",
+      "sha256": "6d41902b38f10cf254266b404c8734f8e522be6cbfee01b9f2b851960ab9e052",
+      "size_bytes": 30521
+    },
+    {
+      "source_file": "chapter_location_CHAPTERLOC_V05_20260723_190258_chapter_candidates_topk_auto.jsonl",
+      "stage": "chapter_location",
+      "sha256": "a19118320202bfeab428f4dbc77d09e71a7c7759761d4fabe55f74e47c5fe19d",
+      "size_bytes": 224149
+    },
+    {
+      "source_file": "chapter_location_CHAPTERLOC_V05_20260723_190258_chapter_ranges_primary_auto.jsonl",
+      "stage": "chapter_location",
+      "sha256": "8363aa2059c44d0f945a45c50964e9fbeace22e60b66c29bcdfd0b8c4bb0f341",
+      "size_bytes": 94721
+    },
+    {
+      "source_file": "chapter_location_CHAPTERLOC_V05_20260723_190258_heading_candidates_auto.jsonl",
+      "stage": "chapter_location",
+      "sha256": "6b15c801b5b9b1f3f3e254d0df7945e40dda04622652e2db1913910fff79b8e0",
+      "size_bytes": 2708818
+    },
+    {
+      "source_file": "chapter_location_CHAPTERLOC_V05_20260723_190258_issuer_master_sections_auto.jsonl",
+      "stage": "chapter_location",
+      "sha256": "d29c7cffc9ffa5befbd1ff38a2a41c7db5bb61dad94e70461262b0c160ef30ee",
+      "size_bytes": 1988
+    },
+    {
+      "source_file": "chapter_location_CHAPTERLOC_V05_20260723_190258_pagination_mapping_auto.jsonl",
+      "stage": "chapter_location",
+      "sha256": "ae6486b43dcd6c452be4a3918ca83b38f545690813475227463b34ab4f6252d3",
+      "size_bytes": 1325124
+    },
+    {
+      "source_file": "numeric_validation_NUMVALID_V01_20260723_232038_calculated_numeric_facts.jsonl",
+      "stage": "numeric_validation",
+      "sha256": "fde3486f6c001217a8b613d21437c724b7db32a71236a3c3f2b17ac9e0a4b1ff",
+      "size_bytes": 667
+    },
+    {
+      "source_file": "numeric_validation_NUMVALID_V01_20260723_232038_numeric_validation_results.jsonl",
+      "stage": "numeric_validation",
+      "sha256": "6cb556352a00f1b87534d91c031a89a3c97fa3d1725567932f0c8d39541c1af5",
+      "size_bytes": 57217
+    },
+    {
+      "source_file": "numeric_validation_NUMVALID_V01_20260723_232038_quarantined_numeric_facts.jsonl",
+      "stage": "numeric_validation",
+      "sha256": "3ad44ba7cdb1ec26dbfe8d6fd3078fd85b67e07f6ed202cbaea6602b6e24e9b0",
+      "size_bytes": 14811
+    },
+    {
+      "source_file": "pevc_paths_PEVCPATH_V032_20260723_235402_investment_paths_auto.jsonl",
+      "stage": "pevc_paths",
+      "sha256": "19c960b07797d17c3dc58c1d7594befd1247ebf4cc20f710673dc149ff674576",
+      "size_bytes": 17583
+    },
+    {
+      "source_file": "pevc_paths_PEVCPATH_V032_20260723_235402_investor_entities_auto.jsonl",
+      "stage": "pevc_paths",
+      "sha256": "c168629bfc1e994e8c86b6079d3f9133218271bd0dce07dedcc6f3fd80d6d093",
+      "size_bytes": 17465
+    },
+    {
+      "source_file": "pevc_paths_PEVCPATH_V032_20260723_235402_non_pevc_observed_investors.jsonl",
+      "stage": "pevc_paths",
+      "sha256": "d31befe95610475a8f3be2790215c6049b08f14245932ac4b350b480c503e542",
+      "size_bytes": 16135
+    },
+    {
+      "source_file": "pevc_paths_PEVCPATH_V032_20260723_235402_pevc_entities_auto.jsonl",
+      "stage": "pevc_paths",
+      "sha256": "07e42b643847fcc8bf06f01199c49c5a4a5bf91135fb9022eda064bed187f3e0",
+      "size_bytes": 1330
+    },
+    {
+      "source_file": "pevc_paths_PEVCPATH_V032_20260723_235402_pevc_investment_paths_auto.jsonl",
+      "stage": "pevc_paths",
+      "sha256": "655a644e1a25a9074b6461b8e27f3b305dc27dd45f8ad0cf7129aaa5cafb3a64",
+      "size_bytes": 1126
+    },
+    {
+      "source_file": "structured_events_STRUCTEVENT_V01_20260723_230629_event_dates_auto.jsonl",
+      "stage": "structured_events",
+      "sha256": "f672a876c369b7b20001d28032b19ae8d98809ec10deafcdab1ff7d41035d8f6",
+      "size_bytes": 83903
+    },
+    {
+      "source_file": "structured_events_STRUCTEVENT_V01_20260723_230629_event_evidence_index.jsonl",
+      "stage": "structured_events",
+      "sha256": "db4a426fba9725dd9a4f70f1e9a50096592bbbb7cc7b647e74ed26887b1a8ff5",
+      "size_bytes": 92984
+    },
+    {
+      "source_file": "structured_events_STRUCTEVENT_V01_20260723_230629_event_parties_auto.jsonl",
+      "stage": "structured_events",
+      "sha256": "6723d2ab62b304a0e08aad5bb16cca5400757f56d10443d102d5d2c5b1f00338",
+      "size_bytes": 14624
+    },
+    {
+      "source_file": "structured_events_STRUCTEVENT_V01_20260723_230629_event_records_auto.jsonl",
+      "stage": "structured_events",
+      "sha256": "04aec773d46ad0cd89fb5cfd30c7e008065ad64ddebaf4af632ba1d2d05bb906",
+      "size_bytes": 28634
+    },
+    {
+      "source_file": "structured_events_STRUCTEVENT_V01_20260723_230629_numeric_facts_auto.jsonl",
+      "stage": "structured_events",
+      "sha256": "e699aa91e94467e332664fe8f92a68d0002f549f513e95c896b737c68c008d34",
+      "size_bytes": 70530
+    },
+    {
+      "source_file": "structured_events_STRUCTEVENT_V01_20260723_230629_transaction_records_auto.jsonl",
+      "stage": "structured_events",
+      "sha256": "76281508f3149c6e06a31b190454b82f3e048735308d425d0ade0187d9cb325f",
+      "size_bytes": 21437
+    }
+  ],
+  "traceability": "Every compact record preserves source_file, record_type and source_run_id. Evidence TXT content is embedded verbatim."
+}
