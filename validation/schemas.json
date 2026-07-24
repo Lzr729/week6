@@ -1,0 +1,306 @@
+{
+  "candidate_event_bundle": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "candidate_event_bundle.schema.json",
+    "title": "Candidate Event Generation Bundle v0.11",
+    "type": "object",
+    "$defs": {
+      "candidate_event": {
+        "type": "object",
+        "required": [
+          "candidate_event_id",
+          "company_id",
+          "source_patch_id",
+          "event_type_candidate",
+          "event_dates",
+          "pdf_page_start",
+          "pdf_page_end",
+          "primary_evidence_id",
+          "candidate_status"
+        ],
+        "properties": {
+          "candidate_event_id": {
+            "type": "string"
+          },
+          "company_id": {
+            "type": "string",
+            "pattern": "^\\d{6}$"
+          },
+          "event_type_candidate": {
+            "type": "string"
+          },
+          "event_dates": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "candidate_status": {
+            "const": "AUTO_CANDIDATE"
+          },
+          "ordinal_labels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "event_date_primary_role": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_date_selection_basis": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      },
+      "negative_disclosure": {
+        "type": "object",
+        "required": [
+          "negative_disclosure_id",
+          "company_id",
+          "event_type_candidate",
+          "evidence_text",
+          "record_status"
+        ],
+        "properties": {
+          "record_status": {
+            "const": "NEGATIVE_DISCLOSURE_NOT_CANDIDATE"
+          }
+        },
+        "additionalProperties": true
+      },
+      "candidate_evidence": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "candidate_event_id",
+          "company_id",
+          "evidence_text",
+          "evidence_sha256"
+        ],
+        "additionalProperties": true
+      },
+      "shareholder_evidence": {
+        "type": "object",
+        "required": [
+          "shareholder_evidence_id",
+          "company_id",
+          "evidence_category",
+          "evidence_text"
+        ],
+        "additionalProperties": true
+      },
+      "summary_disclosure": {
+        "type": "object",
+        "required": [
+          "summary_disclosure_id",
+          "company_id",
+          "summary_kind",
+          "event_type_candidates",
+          "evidence_text",
+          "record_status"
+        ],
+        "properties": {
+          "record_status": {
+            "const": "SUMMARY_DISCLOSURE_NOT_BUSINESS_CANDIDATE"
+          }
+        },
+        "additionalProperties": true
+      },
+      "coverage_gap": {
+        "type": "object",
+        "required": [
+          "coverage_gap_id",
+          "company_id",
+          "source_summary_disclosure_id",
+          "disclosed_event_counts",
+          "represented_candidate_counts",
+          "missing_event_counts",
+          "record_status"
+        ],
+        "properties": {
+          "record_status": {
+            "const": "DISCLOSURE_COVERAGE_GAP"
+          },
+          "disclosed_event_counts": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "missing_event_counts": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "final_submission_bundle": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "final_submission_bundle.schema.json",
+    "title": "Seven Companies Final Submission Bundle v0.1",
+    "type": "object",
+    "required": [
+      "build_id",
+      "build_status",
+      "company_count",
+      "event_count",
+      "transaction_count",
+      "source_run_ids"
+    ],
+    "additionalProperties": true
+  },
+  "numeric_validation_bundle": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "numeric_validation_bundle.schema.json",
+    "title": "Transaction Numeric Validation Bundle v0.1.2",
+    "type": "object",
+    "$defs": {
+      "validation_result": {
+        "type": "object",
+        "required": [
+          "validation_id",
+          "company_id",
+          "rule_id",
+          "validation_status",
+          "disclosed_input_fact_ids"
+        ],
+        "additionalProperties": true
+      },
+      "calculated_fact": {
+        "type": "object",
+        "required": [
+          "calculated_fact_id",
+          "company_id",
+          "event_id",
+          "transaction_id",
+          "formula",
+          "input_fact_ids",
+          "calculated_value",
+          "value_type"
+        ],
+        "properties": {
+          "value_type": {
+            "const": "CALCULATED"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "pevc_path_bundle": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "pevc_path_bundle.schema.json",
+    "title": "PEVC Path Identification Bundle v0.3.2",
+    "type": "object",
+    "$defs": {
+      "investor_entity": {
+        "type": "object",
+        "required": [
+          "investor_entity_id",
+          "company_id",
+          "investor_name_normalized",
+          "pevc_candidate_status",
+          "evidence_ids"
+        ],
+        "additionalProperties": true
+      },
+      "investment_path": {
+        "type": "object",
+        "required": [
+          "investment_path_id",
+          "company_id",
+          "investor_entity_id",
+          "transaction_id",
+          "entry_method",
+          "direct_or_indirect",
+          "evidence_ids"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "structured_event_bundle": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "structured_event_bundle.schema.json",
+    "title": "Structured Event Extraction Bundle v0.2",
+    "type": "object",
+    "$defs": {
+      "event_record": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "candidate_event_id",
+          "company_id",
+          "event_type",
+          "pdf_page_start",
+          "pdf_page_end",
+          "primary_evidence_id"
+        ],
+        "additionalProperties": true
+      },
+      "transaction_record": {
+        "type": "object",
+        "required": [
+          "transaction_id",
+          "event_id",
+          "company_id",
+          "transaction_type"
+        ],
+        "additionalProperties": true
+      },
+      "party_record": {
+        "type": "object",
+        "required": [
+          "party_id",
+          "event_id",
+          "party_name_raw",
+          "party_role",
+          "source_evidence_id"
+        ],
+        "additionalProperties": true
+      },
+      "numeric_fact": {
+        "type": "object",
+        "required": [
+          "numeric_fact_id",
+          "event_id",
+          "fact_type",
+          "raw_value_text",
+          "source_evidence_id"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "validation": {
+    "validation_status": "PASSED",
+    "schemas_checked": [
+      "candidate_event_bundle.schema.json",
+      "final_submission_bundle.schema.json",
+      "numeric_validation_bundle.schema.json",
+      "pevc_path_bundle.schema.json",
+      "structured_event_bundle.schema.json"
+    ],
+    "record_sets": {
+      "events_gold": 26,
+      "transactions_gold": 27,
+      "numeric_validation_gold": 81,
+      "pevc_paths_gold": 2,
+      "review_decisions_gold": 19
+    },
+    "note": "Required fields, stable IDs, page/evidence links and aggregate counts were checked."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "validation_status": "PASSED",
+  "generated_at": "2026-07-24T02:09:17+00:00",
+  "run_ids": {
+    "chapter_location": "CHAPTERLOC_V05_20260724_020856",
+    "candidate_events": "CANDIDATEEVENT_V11_20260724_020916",
+    "candidate_freeze": "CANDIDATEFREEZE_V1_20260724_020917",
+    "structured_events": "STRUCTEVENT_V01_20260724_020917",
+    "numeric_validation": "NUMVALID_V01_20260724_020917",
+    "pevc_paths": "PEVCPATH_V032_20260724_020917"
+  },
+  "comparison": {
+    "events": {
+      "auto_count": 26,
+      "gold_count": 26,
+      "common_count": 26,
+      "auto_only_ids": [],
+      "gold_only_ids": []
+    },
+    "transactions": {
+      "auto_count": 27,
+      "gold_count": 27,
+      "common_count": 27,
+      "auto_only_ids": [],
+      "gold_only_ids": []
+    },
+    "numeric_validation": {
+      "auto_count": 81,
+      "gold_count": 81,
+      "common_count": 81,
+      "auto_only_ids": [],
+      "gold_only_ids": []
+    },
+    "pevc_paths": {
+      "auto_count": 2,
+      "gold_count": 2,
+      "common_count": 2,
+      "auto_only_ids": [],
+      "gold_only_ids": []
+    }
+  },
+  "manual_review_decision_count": 19,
+  "open_review_count": 0
+}
