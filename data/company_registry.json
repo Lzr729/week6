@@ -1,0 +1,122 @@
+{
+  "registry_version": "0.1-draft",
+  "generated_by": "batch_check_v0.1",
+  "run_id": "BATCHCHECK_20260723_171135",
+  "generated_at": "2026-07-23T17:11:40+08:00",
+  "status": "DRAFT_PENDING_PDF_COVER_VERIFICATION",
+  "companies": [
+    {
+      "company_id": "001282",
+      "security_code": "001282",
+      "company_name": null,
+      "short_name": "三联锻造",
+      "aliases": [
+        "三联锻造"
+      ],
+      "pdf_file_name": "001282_三联锻造_IPO招股说明书.pdf",
+      "pdf_relative_path": "001282_三联锻造_IPO招股说明书.pdf",
+      "pdf_sha256": "facdf3d2d15600a9228130c038ea8a142e48461c6b7082bf2f91b8a8cf5285f8",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    },
+    {
+      "company_id": "301581",
+      "security_code": "301581",
+      "company_name": null,
+      "short_name": "黄山谷捷",
+      "aliases": [
+        "黄山谷捷"
+      ],
+      "pdf_file_name": "301581_黄山谷捷_IPO招股说明书.pdf",
+      "pdf_relative_path": "301581_黄山谷捷_IPO招股说明书.pdf",
+      "pdf_sha256": "4f6c6e629102d4253df9a6b35ed73e9dd0b86ba02f9abaad2327344401f58b37",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    },
+    {
+      "company_id": "603418",
+      "security_code": "603418",
+      "company_name": null,
+      "short_name": "友升股份",
+      "aliases": [
+        "友升股份"
+      ],
+      "pdf_file_name": "603418_友升股份_IPO招股说明书.pdf",
+      "pdf_relative_path": "603418_友升股份_IPO招股说明书.pdf",
+      "pdf_sha256": "d82a3450283f69b5f3dab2e46a4e71d884a0a7d44330a7cc60270912498efc67",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    },
+    {
+      "company_id": "688758",
+      "security_code": "688758",
+      "company_name": null,
+      "short_name": "赛分科技",
+      "aliases": [
+        "赛分科技"
+      ],
+      "pdf_file_name": "688758_赛分科技_IPO招股说明书.pdf",
+      "pdf_relative_path": "688758_赛分科技_IPO招股说明书.pdf",
+      "pdf_sha256": "94f21ca8a7568ef53ed3a73acb397f814b8dd7414c0d3686e217719480455a00",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    },
+    {
+      "company_id": "688775",
+      "security_code": "688775",
+      "company_name": null,
+      "short_name": "影石创新",
+      "aliases": [
+        "影石创新"
+      ],
+      "pdf_file_name": "688775_影石创新_IPO招股说明书.pdf",
+      "pdf_relative_path": "688775_影石创新_IPO招股说明书.pdf",
+      "pdf_sha256": "cb89d15a7ca304a5b727ec9359a940b71939ac663e3faa25efa050c07087b473",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    },
+    {
+      "company_id": "920100",
+      "security_code": "920100",
+      "company_name": null,
+      "short_name": "三协电机",
+      "aliases": [
+        "三协电机"
+      ],
+      "pdf_file_name": "920100_三协电机_IPO招股说明书.pdf",
+      "pdf_relative_path": "920100_三协电机_IPO招股说明书.pdf",
+      "pdf_sha256": "00d38ea73d07c46c06e39417b5b988ce7cb475068522fffa3bfa301d1f85abb3",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    },
+    {
+      "company_id": "920116",
+      "security_code": "920116",
+      "company_name": null,
+      "short_name": "星图测控",
+      "aliases": [
+        "星图测控"
+      ],
+      "pdf_file_name": "920116_星图测控_IPO招股说明书.pdf",
+      "pdf_relative_path": "920116_星图测控_IPO招股说明书.pdf",
+      "pdf_sha256": "0f3220d0f6da29abcbd3b9cd1c5229b31f3c5fc4e2dbd025565a590ab0213fff",
+      "enabled": true,
+      "identity_source": "filename_only",
+      "identity_status": "pending_cover_verification",
+      "config_status": "not_created"
+    }
+  ],
+  "unmatched_files": []
+}
