@@ -1,0 +1,162 @@
+{
+  "company_id": "001282",
+  "company_name": "三联锻造",
+  "validation_record_count": 5,
+  "calculated_fact_count": 0,
+  "validation_records": [
+    {
+      "validation_id": "VAL-001282-00001",
+      "company_id": "001282",
+      "event_id": "EVT-001282-0003",
+      "transaction_id": "TRX-001282-0003-01",
+      "rule_id": "NV-CAP-001",
+      "rule_name": "增资前注册资本+增资额=增资后注册资本",
+      "validation_status": "NOT_APPLICABLE",
+      "disclosed_input_fact_ids": [
+        "NUM-001282-00001",
+        "NUM-001282-00002"
+      ],
+      "input_values": {
+        "registered_capital_before": 81500000.0,
+        "capital_increase_amount": null,
+        "registered_capital_after": 84980000.0
+      },
+      "calculation_formula": null,
+      "calculated_value": null,
+      "disclosed_comparison_value": null,
+      "difference_abs": null,
+      "difference_pct": null,
+      "tolerance_abs": null,
+      "tolerance_pct": null,
+      "evidence_ids": [
+        "EVD-001282-0004-01"
+      ],
+      "review_required": false,
+      "review_reason": "原文未同时披露增资前注册资本、增资额和增资后注册资本"
+    },
+    {
+      "validation_id": "VAL-001282-00002",
+      "company_id": "001282",
+      "event_id": "EVT-001282-0003",
+      "transaction_id": "TRX-001282-0003-01",
+      "rule_id": "NV-PRICE-001",
+      "rule_name": "股份数量×每股价格=交易对价",
+      "validation_status": "NOT_APPLICABLE",
+      "disclosed_input_fact_ids": [
+        "NUM-001282-00003",
+        "NUM-001282-00004"
+      ],
+      "input_values": {
+        "share_quantity": null,
+        "share_price": 4.5,
+        "consideration": null
+      },
+      "calculation_formula": null,
+      "calculated_value": null,
+      "disclosed_comparison_value": null,
+      "difference_abs": null,
+      "difference_pct": null,
+      "tolerance_abs": null,
+      "tolerance_pct": null,
+      "evidence_ids": [
+        "EVD-001282-0004-01"
+      ],
+      "review_required": false,
+      "review_reason": "原文未同时披露股份数量、每股价格和交易对价"
+    },
+    {
+      "validation_id": "VAL-001282-00023",
+      "company_id": "001282",
+      "event_id": "EVT-001282-0001",
+      "transaction_id": null,
+      "rule_id": "NV-RATIO-001",
+      "rule_name": "持股比例范围校验",
+      "validation_status": "PASSED",
+      "disclosed_input_fact_ids": [
+        "NUM-001282-00003"
+      ],
+      "input_values": {
+        "equity_ratio_normalized": 0.35000000000000003
+      },
+      "calculation_formula": null,
+      "calculated_value": null,
+      "disclosed_comparison_value": null,
+      "difference_abs": null,
+      "difference_pct": null,
+      "tolerance_abs": null,
+      "tolerance_pct": null,
+      "evidence_ids": [
+        "EVD-001282-0001-01"
+      ],
+      "review_required": false,
+      "review_reason": null
+    },
+    {
+      "validation_id": "VAL-001282-00024",
+      "company_id": "001282",
+      "event_id": "EVT-001282-0001",
+      "transaction_id": null,
+      "rule_id": "NV-RATIO-001",
+      "rule_name": "持股比例范围校验",
+      "validation_status": "PASSED",
+      "disclosed_input_fact_ids": [
+        "NUM-001282-00004"
+      ],
+      "input_values": {
+        "equity_ratio_normalized": 0.325
+      },
+      "calculation_formula": null,
+      "calculated_value": null,
+      "disclosed_comparison_value": null,
+      "difference_abs": null,
+      "difference_pct": null,
+      "tolerance_abs": null,
+      "tolerance_pct": null,
+      "evidence_ids": [
+        "EVD-001282-0001-01"
+      ],
+      "review_required": false,
+      "review_reason": null
+    },
+    {
+      "validation_id": "VAL-001282-00070",
+      "company_id": "001282",
+      "event_id": null,
+      "transaction_id": null,
+      "rule_id": "NV-DATE-001",
+      "rule_name": "公司事件时间顺序校验",
+      "validation_status": "PASSED",
+      "disclosed_input_fact_ids": [],
+      "input_values": {
+        "event_order": [
+          {
+            "event_id": "EVT-001282-0001",
+            "event_period": "2004-06-18",
+            "pdf_page_start": 30
+          },
+          {
+            "event_id": "EVT-001282-0002",
+            "event_period": "2018-11",
+            "pdf_page_start": 32
+          },
+          {
+            "event_id": "EVT-001282-0003",
+            "event_period": "2019-12",
+            "pdf_page_start": 35
+          }
+        ]
+      },
+      "calculation_formula": null,
+      "calculated_value": null,
+      "disclosed_comparison_value": null,
+      "difference_abs": null,
+      "difference_pct": null,
+      "tolerance_abs": null,
+      "tolerance_pct": null,
+      "evidence_ids": [],
+      "review_required": false,
+      "review_reason": null
+    }
+  ],
+  "calculated_facts": []
+}
