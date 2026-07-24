@@ -1,0 +1,127 @@
+{
+  "company_id": "688775",
+  "company_name": "影石创新",
+  "record_count": 3,
+  "records": [
+    {
+      "event_id": "EVT-688775-0001",
+      "candidate_event_id": "CE-688775-0001",
+      "company_id": "688775",
+      "company_short_name": "影石创新",
+      "event_type": "LIMITED_COMPANY_ESTABLISHMENT",
+      "event_type_candidates": [
+        "LIMITED_COMPANY_ESTABLISHMENT"
+      ],
+      "event_group": "ESTABLISHMENT",
+      "event_period": "2015-07-09",
+      "event_date_text": "2015-07-09",
+      "event_date_primary_role": "other_date",
+      "event_dates": {
+        "other_date": [
+          "2015-07-09"
+        ]
+      },
+      "event_title": "1、有限公司设立情况",
+      "disclosure_scope": "ESTABLISHMENT_REPORTING_PERIOD_AND_IMPORTANT_EVENTS",
+      "ordinal_labels": [],
+      "pdf_page_start": 62,
+      "pdf_page_end": 63,
+      "printed_page_start": "1-1-62",
+      "printed_page_end": "1-1-63",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688775-0001-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688775-0002",
+      "candidate_event_id": "CE-688775-0002",
+      "company_id": "688775",
+      "company_short_name": "影石创新",
+      "event_type": "OVERALL_CHANGE",
+      "event_type_candidates": [
+        "OVERALL_CHANGE",
+        "JOINT_STOCK_COMPANY_ESTABLISHMENT"
+      ],
+      "event_group": "REORGANIZATION",
+      "event_period": "2020-02-26",
+      "event_date_text": "2020-02-26",
+      "event_date_primary_role": "registration_date",
+      "event_dates": {
+        "resolution_date": [
+          "2020-01-03",
+          "2020-01-18"
+        ],
+        "other_date": [
+          "2019-10-31",
+          "2020-01-18"
+        ],
+        "registration_date": [
+          "2020-02-26"
+        ]
+      },
+      "event_title": "2、股份公司设立情况",
+      "disclosure_scope": "ESTABLISHMENT_REPORTING_PERIOD_AND_IMPORTANT_EVENTS",
+      "ordinal_labels": [],
+      "pdf_page_start": 63,
+      "pdf_page_end": 64,
+      "printed_page_start": "1-1-63",
+      "printed_page_end": "1-1-64",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688775-0002-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688775-0003",
+      "candidate_event_id": "CE-688775-0003",
+      "company_id": "688775",
+      "company_short_name": "影石创新",
+      "event_type": "EQUITY_TRANSFER",
+      "event_type_candidates": [
+        "EQUITY_TRANSFER"
+      ],
+      "event_group": "EQUITY_TRANSFER",
+      "event_period": "2023-03",
+      "event_date_text": "2023-03",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2023-03"
+        ],
+        "other_date": [
+          "2023-03"
+        ],
+        "resolution_date": [
+          "2023-01-28",
+          "2023-02-17"
+        ]
+      },
+      "event_title": "1、2023 年 3 月，股份公司第一次股权转让",
+      "disclosure_scope": "ESTABLISHMENT_REPORTING_PERIOD_AND_IMPORTANT_EVENTS",
+      "ordinal_labels": [
+        "第一次"
+      ],
+      "pdf_page_start": 65,
+      "pdf_page_end": 66,
+      "printed_page_start": "1-1-65",
+      "printed_page_end": "1-1-66",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688775-0003-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    }
+  ]
+}
