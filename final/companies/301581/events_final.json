@@ -1,0 +1,285 @@
+{
+  "company_id": "301581",
+  "company_name": "黄山谷捷",
+  "record_count": 6,
+  "records": [
+    {
+      "event_id": "EVT-301581-0001",
+      "candidate_event_id": "CE-301581-0001",
+      "company_id": "301581",
+      "company_short_name": "黄山谷捷",
+      "event_type": "LIMITED_COMPANY_ESTABLISHMENT",
+      "event_type_candidates": [
+        "LIMITED_COMPANY_ESTABLISHMENT"
+      ],
+      "event_group": "ESTABLISHMENT",
+      "event_period": "2012-06",
+      "event_date_text": "2012-06",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2012-06"
+        ]
+      },
+      "event_title": "2012-06，发行人前身设立",
+      "disclosure_scope": "REPORTING_PERIOD_EQUITY_AND_SHAREHOLDER_CHANGES",
+      "ordinal_labels": [],
+      "pdf_page_start": 41,
+      "pdf_page_end": 41,
+      "printed_page_start": "1-1-40",
+      "printed_page_end": "1-1-40",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-301581-0001-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.82,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-301581-0002",
+      "candidate_event_id": "CE-301581-0002",
+      "company_id": "301581",
+      "company_short_name": "黄山谷捷",
+      "event_type": "ABSORPTION_MERGER",
+      "event_type_candidates": [
+        "ABSORPTION_MERGER"
+      ],
+      "event_group": "REORGANIZATION",
+      "event_period": "2021-04",
+      "event_date_text": "2021-04",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-04",
+          "2021-04-07"
+        ],
+        "other_date": [
+          "2021-04",
+          "2021-11",
+          "2022-05",
+          "2020-12-25",
+          "2020-12-30",
+          "2021-08-20",
+          "2021-09-07",
+          "2022-11-14",
+          "2021-03-31"
+        ],
+        "resolution_date": [
+          "2020-12-24",
+          "2021-04-07"
+        ],
+        "registration_date": [
+          "2021-04-13"
+        ],
+        "verification_date": [
+          "2022-11-16"
+        ]
+      },
+      "event_title": "2021年4月，吸收合并",
+      "disclosure_scope": "REPORTING_PERIOD_EQUITY_AND_SHAREHOLDER_CHANGES",
+      "ordinal_labels": [],
+      "pdf_page_start": 41,
+      "pdf_page_end": 44,
+      "printed_page_start": "1-1-40",
+      "printed_page_end": "1-1-40",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-301581-0002-01",
+      "supporting_evidence_ids": [
+        "EVD-301581-0002-02",
+        "EVD-301581-0002-03"
+      ],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.95,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-301581-0003",
+      "candidate_event_id": "CE-301581-0003",
+      "company_id": "301581",
+      "company_short_name": "黄山谷捷",
+      "event_type": "EQUITY_TRANSFER",
+      "event_type_candidates": [
+        "EQUITY_TRANSFER"
+      ],
+      "event_group": "EQUITY_TRANSFER",
+      "event_period": "2021-04",
+      "event_date_text": "2021-04",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-04"
+        ],
+        "other_date": [
+          "2021-04",
+          "2020-12-30",
+          "2021-04-03"
+        ],
+        "registration_date": [
+          "2021-04-07"
+        ]
+      },
+      "event_title": "2、2021 年 4 月，第一次股权转让",
+      "disclosure_scope": "REPORTING_PERIOD_EQUITY_AND_SHAREHOLDER_CHANGES",
+      "ordinal_labels": [
+        "第一次"
+      ],
+      "pdf_page_start": 42,
+      "pdf_page_end": 43,
+      "printed_page_start": "1-1-41",
+      "printed_page_end": "1-1-42",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-301581-0003-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-301581-0004",
+      "candidate_event_id": "CE-301581-0004",
+      "company_id": "301581",
+      "company_short_name": "黄山谷捷",
+      "event_type": "CAPITAL_INCREASE",
+      "event_type_candidates": [
+        "CAPITAL_INCREASE"
+      ],
+      "event_group": "CAPITAL_CHANGE",
+      "event_period": "2021-11",
+      "event_date_text": "2021-11",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-11"
+        ],
+        "other_date": [
+          "2021-11",
+          "2021-07-31",
+          "2020",
+          "2022-11-25",
+          "2021-09-17",
+          "2021-09-18",
+          "2021-12-31"
+        ],
+        "resolution_date": [
+          "2021-09-19"
+        ],
+        "registration_date": [
+          "2021-11-11"
+        ],
+        "verification_date": [
+          "2022-01-17"
+        ]
+      },
+      "event_title": "4、2021 年 11 月，第一次增资，增资至 1,714.2857 万元",
+      "disclosure_scope": "REPORTING_PERIOD_EQUITY_AND_SHAREHOLDER_CHANGES",
+      "ordinal_labels": [
+        "第一次"
+      ],
+      "pdf_page_start": 44,
+      "pdf_page_end": 45,
+      "printed_page_start": "1-1-43",
+      "printed_page_end": "1-1-44",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-301581-0004-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-301581-0005",
+      "candidate_event_id": "CE-301581-0005",
+      "company_id": "301581",
+      "company_short_name": "黄山谷捷",
+      "event_type": "CAPITAL_INCREASE",
+      "event_type_candidates": [
+        "CAPITAL_INCREASE"
+      ],
+      "event_group": "CAPITAL_CHANGE",
+      "event_period": "2022-05",
+      "event_date_text": "2022-05",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2022-05"
+        ],
+        "other_date": [
+          "2022-05",
+          "2022-04-28",
+          "2021-12-31",
+          "2022-05-17"
+        ],
+        "resolution_date": [
+          "2022-05-20"
+        ],
+        "agreement_date": [
+          "2022-05-24"
+        ]
+      },
+      "event_title": "5、2022 年 5 月，第二次增资，增资至 1,804.5113 万元",
+      "disclosure_scope": "REPORTING_PERIOD_EQUITY_AND_SHAREHOLDER_CHANGES",
+      "ordinal_labels": [
+        "第二次"
+      ],
+      "pdf_page_start": 45,
+      "pdf_page_end": 45,
+      "printed_page_start": "1-1-44",
+      "printed_page_end": "1-1-44",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-301581-0005-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-301581-0006",
+      "candidate_event_id": "CE-301581-0006",
+      "company_id": "301581",
+      "company_short_name": "黄山谷捷",
+      "event_type": "OVERALL_CHANGE",
+      "event_type_candidates": [
+        "OVERALL_CHANGE"
+      ],
+      "event_group": "REORGANIZATION",
+      "event_period": "2022-09",
+      "event_date_text": "2022-09",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2022-09"
+        ],
+        "other_date": [
+          "2022-09"
+        ]
+      },
+      "event_title": "2022 年 9 月，谷捷有限整体变更为股份公司，具体情况见本节之“二、发",
+      "disclosure_scope": "REPORTING_PERIOD_EQUITY_AND_SHAREHOLDER_CHANGES",
+      "ordinal_labels": [],
+      "pdf_page_start": 46,
+      "pdf_page_end": 46,
+      "printed_page_start": "1-1-45",
+      "printed_page_end": "1-1-45",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-301581-0006-01",
+      "supporting_evidence_ids": [
+        "EVD-301581-0006-02"
+      ],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.95,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    }
+  ]
+}
