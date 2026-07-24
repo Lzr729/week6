@@ -1,0 +1,38 @@
+{
+  "company_id": "920100",
+  "company_name": "三协电机",
+  "validation_record_count": 1,
+  "calculated_fact_count": 0,
+  "validation_records": [
+    {
+      "validation_id": "VAL-920100-00075",
+      "company_id": "920100",
+      "event_id": null,
+      "transaction_id": null,
+      "rule_id": "NV-DATE-001",
+      "rule_name": "公司事件时间顺序校验",
+      "validation_status": "PASSED",
+      "disclosed_input_fact_ids": [],
+      "input_values": {
+        "event_order": [
+          {
+            "event_id": "EVT-920100-0001",
+            "event_period": "2021-03",
+            "pdf_page_start": 39
+          }
+        ]
+      },
+      "calculation_formula": null,
+      "calculated_value": null,
+      "disclosed_comparison_value": null,
+      "difference_abs": null,
+      "difference_pct": null,
+      "tolerance_abs": null,
+      "tolerance_pct": null,
+      "evidence_ids": [],
+      "review_required": false,
+      "review_reason": null
+    }
+  ],
+  "calculated_facts": []
+}

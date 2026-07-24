@@ -1,0 +1,44 @@
+{
+  "company_id": "920100",
+  "company_name": "三协电机",
+  "record_count": 1,
+  "records": [
+    {
+      "event_id": "EVT-920100-0001",
+      "candidate_event_id": "CE-920100-0001",
+      "company_id": "920100",
+      "company_short_name": "三协电机",
+      "event_type": "EQUITY_HOLDING_PROXY_RELEASE",
+      "event_type_candidates": [
+        "EQUITY_HOLDING_PROXY_RELEASE"
+      ],
+      "event_group": "EQUITY_HOLDING_PROXY",
+      "event_period": "2021-03",
+      "event_date_text": "2021-03",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-03"
+        ],
+        "other_date": [
+          "2021-03"
+        ]
+      },
+      "event_title": "2021 年 3 月，上述股权代持已解除， 涉及代持各方不存在纠纷或潜在纠纷， 上述股权代持情况",
+      "disclosure_scope": "REFERENCED_NOT_FULLY_DISCLOSED",
+      "ordinal_labels": [],
+      "pdf_page_start": 39,
+      "pdf_page_end": 39,
+      "printed_page_start": "1-1-39",
+      "printed_page_end": "1-1-39",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-920100-0001-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    }
+  ]
+}
