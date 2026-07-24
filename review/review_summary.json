@@ -1,0 +1,73 @@
+{
+  "manual_review_decision_count": 19,
+  "open_review_count": 0,
+  "candidate_freeze": {
+    "latest": {
+      "freeze_id": "CANDIDATEFREEZE_V1_20260723_225835",
+      "source_run_id": "CANDIDATEEVENT_V11_20260723_224502",
+      "freeze_status": "FROZEN",
+      "created_at": "2026-07-23T22:58:35+08:00",
+      "flat_review_directory": "review",
+      "output_files": {
+        "candidate_events": "review/candidate_events_frozen.jsonl",
+        "candidate_evidence": "review/candidate_evidence_frozen.jsonl",
+        "shareholder_evidence": "review/candidate_shareholder_evidence_frozen.jsonl",
+        "coverage_gaps": "review/candidate_coverage_gaps_frozen.jsonl",
+        "review_patch": "review/candidate_event_review_patch.jsonl",
+        "freeze_metrics": "review/candidate_freeze_metrics.json",
+        "freeze_validation": "review/candidate_freeze_validation.json"
+      }
+    },
+    "metrics": {
+      "freeze_version": "candidate_event_freeze_patch_v1",
+      "freeze_id": "CANDIDATEFREEZE_V1_20260723_225835",
+      "source_run_id": "CANDIDATEEVENT_V11_20260723_224502",
+      "created_at": "2026-07-23T22:58:35+08:00",
+      "freeze_status": "FROZEN",
+      "source_candidate_count": 28,
+      "frozen_candidate_count": 26,
+      "removed_candidate_count": 2,
+      "review_patch_count": 5,
+      "coverage_gap_count": 2,
+      "coverage_gap_status": "ACCEPTED_DISCLOSURE_LIMITATION",
+      "company_candidate_counts": {
+        "001282": 3,
+        "301581": 6,
+        "603418": 5,
+        "688758": 7,
+        "688775": 3,
+        "920100": 1,
+        "920116": 1
+      },
+      "printed_page_coverage_rate": 1.0,
+      "validation_error_count": 0,
+      "source_metrics_sha256": "b8c7e63679d8e85b5fad6c61e2e8395dc7737d421416c8a8fb07420d719a0c4f",
+      "source_candidates_sha256": "23883fca0affe17702bb22771dc16e4731f68d13313289ec2219943acc0a3b64",
+      "human_signoff_status": "NOT_CLAIMED",
+      "next_stage": "STRUCTURED_EVENT_FIELD_EXTRACTION"
+    },
+    "validation": {
+      "validation_status": "PASSED",
+      "errors": [],
+      "company_candidate_counts": {
+        "001282": 3,
+        "301581": 6,
+        "603418": 5,
+        "688758": 7,
+        "688775": 3,
+        "920100": 1,
+        "920116": 1
+      },
+      "candidate_event_count": 26,
+      "printed_page_mapped_count": 26,
+      "printed_page_coverage_rate": 1.0
+    }
+  },
+  "replay_gold_merge": {
+    "patched_review_count": 16,
+    "unmatched_review_ids": [],
+    "output_dir": "/mnt/data/week6_github_submission_compact_replay_test_final/workspace/runtime_repo/final/seven_companies/FINALASSEMBLY_V01_20260724_020917",
+    "package_path": "/mnt/data/week6_github_submission_compact_replay_test_final/workspace/runtime_repo/final/seven_companies_final_json_ready_FINALASSEMBLY_V01_20260724_020917.zip"
+  },
+  "consolidation_policy": "review_decisions.jsonl is the authoritative review ledger. Frozen events and evidence remain available in manual_gold, auto_output and final."
+}
