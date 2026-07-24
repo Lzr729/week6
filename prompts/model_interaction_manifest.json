@@ -1,0 +1,72 @@
+{
+  "manifest_version": "1.0",
+  "records": [
+    {
+      "interaction_id": "MI-001",
+      "stage": "CANDIDATE_EVENT_REVIEW",
+      "prompt_file": "prompts/candidate_event_review_prompt.md",
+      "input_artifacts": [
+        "auto_output/auto_output_manifest.json",
+        "auto_output/auto_output_manifest.json"
+      ],
+      "structured_output_artifact": "logs/model_interactions.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-002",
+      "stage": "STRUCTURED_EVENT_REVIEW",
+      "prompt_file": "prompts/structured_event_annotation_prompt.md",
+      "input_artifacts": [
+        "auto_output/auto_output_manifest.json"
+      ],
+      "structured_output_artifact": "logs/model_interactions.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-003",
+      "stage": "NUMERIC_REVIEW",
+      "prompt_file": "prompts/numeric_review_prompt.md",
+      "input_artifacts": [
+        "auto_output/auto_output_manifest.json"
+      ],
+      "structured_output_artifact": "logs/model_interactions.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-004",
+      "stage": "PEVC_REVIEW",
+      "prompt_file": "prompts/pevc_identification_prompt.md",
+      "input_artifacts": [
+        "auto_output/auto_output_manifest.json",
+        "auto_output/auto_output_manifest.json"
+      ],
+      "structured_output_artifact": "manual_gold/pevc_paths_gold.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-005",
+      "stage": "FINAL_MANUAL_REVIEW",
+      "prompt_file": "prompts/final_review_prompt.md",
+      "input_artifacts": [
+        "validation/"
+      ],
+      "structured_output_artifact": "logs/model_interactions.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    }
+  ]
+}
