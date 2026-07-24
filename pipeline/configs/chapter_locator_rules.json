@@ -1,0 +1,643 @@
+{
+  "rules_version": "chapter_locator_rules_v0.5",
+  "heading": {
+    "max_chars": 64,
+    "body_scan_lines": 18,
+    "page_top_line_limit": 12,
+    "merge_max_lines": 2,
+    "repeated_header_min_pages": 5
+  },
+  "toc": {
+    "title_keywords": [
+      "目录"
+    ],
+    "dot_leader_pattern": "[\\.·…]{2,}",
+    "minimum_toc_like_lines": 5
+  },
+  "pagination": {
+    "max_edge_lines": 8,
+    "bare_number_footer_lines": 3,
+    "bare_number_max_digits": 4,
+    "exclude_year_min": 1900,
+    "exclude_year_max": 2099,
+    "max_page_number_margin": 40,
+    "minimum_sequence_length": 3,
+    "minimum_inference_anchors": 3,
+    "prospectus_header_keywords": [
+      "招股说明书"
+    ],
+    "prospectus_header_scan_lines": 4,
+    "dominant_offset_min_share": 0.6
+  },
+  "candidate_selection": {
+    "top_k_per_type": 3,
+    "primary_min_confidence": 0.72,
+    "ambiguity_margin": 0.08,
+    "toc_support_bonus": 0.06,
+    "context_support_bonus": 0.08,
+    "broad_scope_bonus": 0.1,
+    "sibling_group_bonus": 0.12,
+    "event_cluster_bonus": 0.14,
+    "narrow_scope_penalty": 0.18,
+    "late_document_penalty": 0.12,
+    "single_page_master_penalty": 0.08,
+    "max_section_scan_pages": 45,
+    "max_sibling_gap_pages": 15,
+    "max_event_cluster_gap_pages": 10,
+    "source_priority": {
+      "ISSUER_MASTER_SECTION": 8,
+      "HEADING_SECTION": 7,
+      "SIBLING_GROUP": 6,
+      "EVENT_CLUSTER": 5,
+      "EVENT_WINDOW": 4
+    },
+    "review_alternative_count": 2
+  },
+  "required_chapter_types": [
+    "equity_history",
+    "shareholders"
+  ],
+  "event_heading_keywords": [
+    "设立",
+    "成立",
+    "增资",
+    "股权转让",
+    "股份转让",
+    "整体变更",
+    "改制",
+    "减资",
+    "资本公积转增",
+    "股本变更",
+    "注册资本变更"
+  ],
+  "chapter_types": {
+    "issuer_overview": {
+      "aliases": [
+        "发行人基本情况",
+        "发行人概况",
+        "公司基本情况",
+        "发行人基本信息",
+        "发行人基本情况概述"
+      ],
+      "trigger_groups": [
+        [
+          "发行人",
+          "基本情况"
+        ],
+        [
+          "发行人",
+          "概况"
+        ],
+        [
+          "公司",
+          "基本情况"
+        ]
+      ],
+      "title_anchor_terms": [
+        "基本情况",
+        "概况",
+        "基本信息"
+      ],
+      "context_keywords": [
+        "成立时间",
+        "注册资本",
+        "法定代表人",
+        "注册地址"
+      ],
+      "minimum_context_support": 2,
+      "exclude_title_keywords": [
+        "募集资金基本情况",
+        "本次发行基本情况"
+      ],
+      "broad_scope_terms": [
+        "发行人基本情况",
+        "公司基本情况"
+      ],
+      "narrow_scope_terms": [],
+      "allowed_levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    "equity_history": {
+      "aliases": [
+        "公司设立以来股本演变情况",
+        "公司设立及股本变化情况",
+        "发行人历史沿革",
+        "发行人的股本形成及其变化",
+        "发行人的设立及历次股本变化",
+        "发行人的设立及报告期内的股本和股东变化情况",
+        "发行人的设立及股本变化情况",
+        "发行人的设立情况、报告期内的股本和股东变化情况",
+        "发行人的设立情况及股本演变",
+        "发行人的设立情况报告期内的股本和股东变化情况",
+        "发行人股本形成及变化",
+        "发行人股本演变",
+        "发行人设立以来的股本演变",
+        "发行人设立以来股本变化情况",
+        "发行人设立及历次股本变化",
+        "发行人设立及报告期内股本演变情况",
+        "发行人设立及股本演变情况",
+        "设立以来的股本演变"
+      ],
+      "trigger_groups": [
+        [
+          "发行人",
+          "设立",
+          "股本"
+        ],
+        [
+          "公司",
+          "设立",
+          "股本"
+        ],
+        [
+          "股本",
+          "形成",
+          "变化"
+        ],
+        [
+          "股本",
+          "演变"
+        ],
+        [
+          "历史",
+          "沿革"
+        ],
+        [
+          "设立以来",
+          "股本"
+        ],
+        [
+          "设立",
+          "历次",
+          "变化"
+        ],
+        [
+          "设立",
+          "股本",
+          "变化"
+        ],
+        [
+          "设立",
+          "股东",
+          "变化"
+        ],
+        [
+          "报告期内",
+          "股本",
+          "演变"
+        ]
+      ],
+      "title_anchor_terms": [
+        "设立",
+        "历史沿革",
+        "股本",
+        "股权演变",
+        "股本形成",
+        "注册资本"
+      ],
+      "context_keywords": [
+        "有限公司设立",
+        "股份公司设立",
+        "整体变更",
+        "增资",
+        "股权转让",
+        "股份转让",
+        "注册资本",
+        "验资报告",
+        "工商变更",
+        "股本结构"
+      ],
+      "minimum_context_support": 4,
+      "exclude_title_keywords": [
+        "专项说明",
+        "代持情况",
+        "募集资金",
+        "发行人股本情况",
+        "发行前后股本结构",
+        "发行方案",
+        "合法合规",
+        "完全披露",
+        "审核问询",
+        "承诺",
+        "本次发行前后的股本情况",
+        "本次发行前后的股本结构",
+        "本次发行前后股本结构",
+        "本次发行后",
+        "核查意见",
+        "法律意见书",
+        "股权代持",
+        "补充法律意见",
+        "重大违法",
+        "问询回复"
+      ],
+      "broad_scope_terms": [
+        "发行人的设立及股本变化",
+        "设立以来股本演变",
+        "股本形成及变化",
+        "发行人历史沿革",
+        "公司历史沿革",
+        "设立及历次股本变化",
+        "设立及股本演变"
+      ],
+      "narrow_scope_terms": [
+        "概图",
+        "报告期内",
+        "代持",
+        "核查",
+        "说明",
+        "合法合规"
+      ],
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "minimum_event_categories": 2,
+      "minimum_date_count": 2
+    },
+    "shareholders": {
+      "aliases": [
+        "主要股东情况",
+        "发行人主要股东情况",
+        "发行人的股权结构",
+        "发行人股东及实际控制人情况",
+        "发行人股东情况",
+        "发行人股本情况",
+        "发行人股本结构",
+        "发行前十名股东",
+        "发行前本公司前十名股东",
+        "发行前股东情况",
+        "本次发行前公司前十名股东情况",
+        "本次发行前后的股本情况",
+        "本次发行前后的股本结构情况",
+        "本次发行前后股本结构情况",
+        "本次发行前的前十名股东",
+        "股东基本情况"
+      ],
+      "trigger_groups": [
+        [
+          "发行人",
+          "股东",
+          "情况"
+        ],
+        [
+          "股东",
+          "实际控制人",
+          "情况"
+        ],
+        [
+          "主要",
+          "股东"
+        ],
+        [
+          "发行前",
+          "前十名",
+          "股东"
+        ],
+        [
+          "本次发行前",
+          "股东"
+        ],
+        [
+          "股权",
+          "结构"
+        ],
+        [
+          "发行人",
+          "股本",
+          "情况"
+        ],
+        [
+          "本次发行前后",
+          "股本",
+          "结构"
+        ]
+      ],
+      "title_anchor_terms": [
+        "股东",
+        "股权结构",
+        "股本结构",
+        "实际控制人"
+      ],
+      "context_keywords": [
+        "持股数量",
+        "持股比例",
+        "股东名称",
+        "前十名股东",
+        "控股股东",
+        "实际控制人",
+        "发行前股本"
+      ],
+      "minimum_context_support": 3,
+      "exclude_title_keywords": [
+        "不适格股东",
+        "关联交易",
+        "减持",
+        "历史沿革",
+        "合法合规",
+        "同业竞争",
+        "承诺",
+        "报告期内的股本和股东变化",
+        "新增股东",
+        "社会公众股东",
+        "股东变化",
+        "股本变化",
+        "股本和股东变化",
+        "股本演变",
+        "股权演变",
+        "自然人股东及其担任",
+        "设立以来",
+        "重大违法",
+        "锁定",
+        "限售"
+      ],
+      "broad_scope_terms": [
+        "发行人股东及实际控制人情况",
+        "发行人股东情况",
+        "主要股东情况",
+        "本次发行前公司前十名股东情况",
+        "发行人的股权结构"
+      ],
+      "narrow_scope_terms": [
+        "新增股东",
+        "自然人股东",
+        "合法合规",
+        "重大违法",
+        "限售",
+        "锁定",
+        "减持",
+        "承诺"
+      ],
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "private_fund_shareholders": {
+      "aliases": [
+        "私募投资基金股东情况",
+        "私募基金股东情况",
+        "私募投资基金备案情况",
+        "私募投资基金股东备案情况"
+      ],
+      "trigger_groups": [
+        [
+          "私募投资基金",
+          "股东"
+        ],
+        [
+          "私募基金",
+          "股东"
+        ],
+        [
+          "私募投资基金",
+          "备案"
+        ]
+      ],
+      "title_anchor_terms": [
+        "私募投资基金",
+        "私募基金"
+      ],
+      "context_keywords": [
+        "基金管理人",
+        "基金备案",
+        "中国证券投资基金业协会"
+      ],
+      "minimum_context_support": 2,
+      "exclude_title_keywords": [],
+      "broad_scope_terms": [
+        "私募投资基金股东情况"
+      ],
+      "narrow_scope_terms": [],
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "shareholder_compliance": {
+      "aliases": [
+        "发行人控股股东实际控制人报告期内合法合规情况",
+        "发行人控股股东实际控制人重大违法情况"
+      ],
+      "trigger_groups": [
+        [
+          "股东",
+          "合法合规"
+        ],
+        [
+          "实际控制人",
+          "重大违法"
+        ]
+      ],
+      "title_anchor_terms": [
+        "合法合规",
+        "重大违法"
+      ],
+      "context_keywords": [
+        "处罚",
+        "违法",
+        "合规"
+      ],
+      "minimum_context_support": 1,
+      "exclude_title_keywords": [],
+      "broad_scope_terms": [],
+      "narrow_scope_terms": [],
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "shareholder_lockup": {
+      "aliases": [
+        "本次发行前股东所持股份的限售安排",
+        "股份锁定及减持安排"
+      ],
+      "trigger_groups": [
+        [
+          "股东",
+          "限售"
+        ],
+        [
+          "股份",
+          "锁定"
+        ],
+        [
+          "持股",
+          "减持"
+        ]
+      ],
+      "title_anchor_terms": [
+        "限售",
+        "锁定",
+        "减持"
+      ],
+      "context_keywords": [
+        "限售",
+        "锁定",
+        "减持"
+      ],
+      "minimum_context_support": 1,
+      "exclude_title_keywords": [],
+      "broad_scope_terms": [],
+      "narrow_scope_terms": [],
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "new_shareholders": {
+      "aliases": [
+        "新增股东基本情况",
+        "最近一年新增股东情况"
+      ],
+      "trigger_groups": [
+        [
+          "新增",
+          "股东"
+        ]
+      ],
+      "title_anchor_terms": [
+        "新增股东"
+      ],
+      "context_keywords": [
+        "入股",
+        "增资",
+        "股权转让"
+      ],
+      "minimum_context_support": 1,
+      "exclude_title_keywords": [],
+      "broad_scope_terms": [],
+      "narrow_scope_terms": [],
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "restructuring": {
+      "aliases": [
+        "发行人重大资产重组情况",
+        "重大资产重组情况"
+      ],
+      "trigger_groups": [
+        [
+          "重大资产重组"
+        ],
+        [
+          "发行人",
+          "资产重组"
+        ]
+      ],
+      "title_anchor_terms": [
+        "重大资产重组",
+        "资产重组"
+      ],
+      "context_keywords": [
+        "重组",
+        "资产收购",
+        "业务合并"
+      ],
+      "minimum_context_support": 1,
+      "exclude_title_keywords": [
+        "募集资金"
+      ],
+      "broad_scope_terms": [
+        "重大资产重组情况"
+      ],
+      "narrow_scope_terms": [],
+      "allowed_levels": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "event_window": {
+    "categories": {
+      "establishment": [
+        "有限公司设立",
+        "股份公司设立",
+        "公司设立",
+        "发起设立"
+      ],
+      "capital_increase": [
+        "增资",
+        "增加注册资本",
+        "新增注册资本"
+      ],
+      "equity_transfer": [
+        "股权转让",
+        "股份转让",
+        "受让股权"
+      ],
+      "overall_change": [
+        "整体变更",
+        "整体改制",
+        "变更为股份有限公司"
+      ],
+      "capital_change": [
+        "注册资本变更",
+        "股本变更",
+        "减资",
+        "资本公积转增"
+      ]
+    },
+    "minimum_categories": 2,
+    "minimum_date_count": 2,
+    "seed_minimum_categories": 1,
+    "seed_minimum_date_count": 1,
+    "max_gap_pages": 2,
+    "padding_pages_before": 0,
+    "padding_pages_after": 1,
+    "max_window_pages": 20,
+    "late_document_ratio": 0.78,
+    "exclude_window_keywords": [
+      "审核问询函回复",
+      "审核问询回复",
+      "补充法律意见书",
+      "法律意见书",
+      "核查意见",
+      "专项说明"
+    ],
+    "static_equity_title_terms": [
+      "发行人股本情况",
+      "本次发行前后的股本结构",
+      "本次发行前后股本结构",
+      "本次发行前后的股本情况",
+      "发行前后股本结构"
+    ],
+    "restrict_to_issuer_master_section": true
+  },
+  "issuer_master_section": {
+    "aliases": [
+      "发行人基本情况",
+      "公司基本情况",
+      "发行人情况"
+    ],
+    "next_section_pattern": "^第[一二三四五六七八九十百\\d]+节",
+    "scan_lines": 24,
+    "context_keywords": [
+      "注册资本",
+      "法定代表人",
+      "成立时间",
+      "发行人的设立",
+      "股本",
+      "股东"
+    ],
+    "minimum_context_support": 2,
+    "max_span_pages": 120
+  }
+}
