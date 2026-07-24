@@ -1,0 +1,363 @@
+{
+  "company_id": "688758",
+  "company_name": "赛分科技",
+  "record_count": 7,
+  "records": [
+    {
+      "event_id": "EVT-688758-0001",
+      "candidate_event_id": "CE-688758-0001",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "LIMITED_COMPANY_ESTABLISHMENT",
+      "event_type_candidates": [
+        "LIMITED_COMPANY_ESTABLISHMENT"
+      ],
+      "event_group": "ESTABLISHMENT",
+      "event_period": "2009-01-23",
+      "event_date_text": "2009-01-23",
+      "event_date_primary_role": "registration_date",
+      "event_dates": {
+        "registration_date": [
+          "2009-01-23"
+        ],
+        "agreement_date": [
+          "2009-02-06"
+        ],
+        "payment_date": [
+          "2011-03-10"
+        ],
+        "other_date": [
+          "2009-03-11",
+          "2010-06-17",
+          "2011-04-19"
+        ],
+        "verification_date": [
+          "2009-03-10",
+          "2010-06-17",
+          "2011-04-18"
+        ],
+        "effective_date": [
+          "2009-03-16"
+        ]
+      },
+      "event_title": "（一）公司前身赛分有限的设立情况",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [],
+      "pdf_page_start": 50,
+      "pdf_page_end": 51,
+      "printed_page_start": "1-1-49",
+      "printed_page_end": "1-1-50",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0001-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688758-0002",
+      "candidate_event_id": "CE-688758-0002",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "OVERALL_CHANGE",
+      "event_type_candidates": [
+        "JOINT_STOCK_COMPANY_ESTABLISHMENT",
+        "OVERALL_CHANGE"
+      ],
+      "event_group": "REORGANIZATION",
+      "event_period": "2021-09-16",
+      "event_date_text": "2021-09-16",
+      "event_date_primary_role": "effective_date",
+      "event_dates": {
+        "other_date": [
+          "2021-08-09",
+          "2021",
+          "2021-05-31",
+          "2021-08-25",
+          "2020",
+          "2021-09"
+        ],
+        "resolution_date": [
+          "2021-08-09",
+          "2021-08-25"
+        ],
+        "effective_date": [
+          "2021-09-16"
+        ],
+        "event_period": [
+          "2021-09-16",
+          "2021-09"
+        ]
+      },
+      "event_title": "（二）股份公司的设立情况",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [],
+      "pdf_page_start": 51,
+      "pdf_page_end": 59,
+      "printed_page_start": "1-1-50",
+      "printed_page_end": "1-1-52",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0002-01",
+      "supporting_evidence_ids": [
+        "EVD-688758-0002-02",
+        "EVD-688758-0002-03"
+      ],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.95,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688758-0003",
+      "candidate_event_id": "CE-688758-0003",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "EQUITY_TRANSFER",
+      "event_type_candidates": [
+        "EQUITY_TRANSFER",
+        "CAPITAL_INCREASE"
+      ],
+      "event_group": "EQUITY_TRANSFER",
+      "event_period": "2021-04",
+      "event_date_text": "2021-04",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-04"
+        ],
+        "other_date": [
+          "2021-04"
+        ],
+        "resolution_date": [
+          "2021-02-22",
+          "2021-02-25"
+        ],
+        "agreement_date": [
+          "2021-01",
+          "2021-02-24",
+          "2021-02-26"
+        ],
+        "payment_date": [
+          "2021-03"
+        ]
+      },
+      "event_title": "1、2021 年 4 月，报告期内第一次股权转让及第一次增资",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [
+        "第一次"
+      ],
+      "pdf_page_start": 55,
+      "pdf_page_end": 56,
+      "printed_page_start": "1-1-54",
+      "printed_page_end": "1-1-55",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0003-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688758-0004",
+      "candidate_event_id": "CE-688758-0004",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "EQUITY_TRANSFER",
+      "event_type_candidates": [
+        "EQUITY_TRANSFER"
+      ],
+      "event_group": "EQUITY_TRANSFER",
+      "event_period": "2021-08",
+      "event_date_text": "2021-08",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-08"
+        ],
+        "other_date": [
+          "2021-08"
+        ],
+        "resolution_date": [
+          "2021-07-10"
+        ],
+        "agreement_date": [
+          "2021-07-10",
+          "2015-07",
+          "2015-08"
+        ]
+      },
+      "event_title": "2、2021 年 8 月，报告期内第二次股权转让",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [
+        "第二次"
+      ],
+      "pdf_page_start": 57,
+      "pdf_page_end": 58,
+      "printed_page_start": "1-1-56",
+      "printed_page_end": "1-1-57",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0004-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688758-0005",
+      "candidate_event_id": "CE-688758-0005",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "CAPITAL_INCREASE",
+      "event_type_candidates": [
+        "CAPITAL_INCREASE"
+      ],
+      "event_group": "CAPITAL_CHANGE",
+      "event_period": "2021-11",
+      "event_date_text": "2021-11",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-11"
+        ],
+        "other_date": [
+          "2021-11"
+        ],
+        "resolution_date": [
+          "2021-10-28",
+          "2021"
+        ],
+        "agreement_date": [
+          "2021-10-28"
+        ],
+        "payment_date": [
+          "2021-11"
+        ]
+      },
+      "event_title": "4、2021 年 11 月，报告期内第二次增资",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [
+        "第二次"
+      ],
+      "pdf_page_start": 59,
+      "pdf_page_end": 59,
+      "printed_page_start": "1-1-58",
+      "printed_page_end": "1-1-58",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0005-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688758-0006",
+      "candidate_event_id": "CE-688758-0006",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "CAPITAL_INCREASE",
+      "event_type_candidates": [
+        "CAPITAL_INCREASE"
+      ],
+      "event_group": "CAPITAL_CHANGE",
+      "event_period": "2021-12",
+      "event_date_text": "2021-12",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-12"
+        ],
+        "other_date": [
+          "2021-12",
+          "2022-06-30"
+        ],
+        "resolution_date": [
+          "2021-11-22",
+          "2021"
+        ],
+        "agreement_date": [
+          "2021-11-22",
+          "2022-06-30"
+        ],
+        "payment_date": [
+          "2021-12"
+        ],
+        "registration_date": [
+          "2021-12-06"
+        ]
+      },
+      "event_title": "5、2021 年 12 月，报告期内第三次增资",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [
+        "第三次"
+      ],
+      "pdf_page_start": 60,
+      "pdf_page_end": 62,
+      "printed_page_start": "1-1-59",
+      "printed_page_end": "1-1-61",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0006-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "event_id": "EVT-688758-0007",
+      "candidate_event_id": "CE-688758-0007",
+      "company_id": "688758",
+      "company_short_name": "赛分科技",
+      "event_type": "SHARE_CAPITAL_CHANGE",
+      "event_type_candidates": [
+        "SHARE_CAPITAL_CHANGE"
+      ],
+      "event_group": "CAPITAL_CHANGE",
+      "event_period": "2021-12",
+      "event_date_text": "2021-12",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2021-12"
+        ],
+        "other_date": [
+          "2021-12",
+          "2021-11-25"
+        ],
+        "resolution_date": [
+          "2021-12-06",
+          "2021"
+        ],
+        "registration_date": [
+          "2021-12-15"
+        ]
+      },
+      "event_title": "6、2021 年 12 月，报告期内第一次资本公积转增股本",
+      "disclosure_scope": "ESTABLISHMENT_AND_REPORTING_PERIOD_CHANGES",
+      "ordinal_labels": [
+        "第一次"
+      ],
+      "pdf_page_start": 62,
+      "pdf_page_end": 64,
+      "printed_page_start": "1-1-61",
+      "printed_page_end": "1-1-63",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-688758-0007-01",
+      "supporting_evidence_ids": [],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.9,
+      "extraction_status": "AUTO_STRUCTURED",
+      "review_required": false,
+      "review_reasons": []
+    }
+  ]
+}
