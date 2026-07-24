@@ -1,0 +1,16 @@
+{
+  "rules_version": "structured_event_rules_v0.2",
+  "input_event_count": 26,
+  "llm_called": false,
+  "pevc_classification": false,
+  "unknown_value_policy": "NULL_NOT_INFERRED",
+  "expected_transaction_count": 27,
+  "canonicalization": {
+    "OVERALL_CHANGE": [
+      "SUPPRESS_JOINT_STOCK_ESTABLISHMENT_TRANSACTION"
+    ],
+    "EQUITY_HOLDING_PROXY_RELEASE": [
+      "SUPPRESS_PROXY_EXISTENCE_TRANSACTION_IN_SAME_EVENT"
+    ]
+  }
+}

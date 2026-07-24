@@ -1,0 +1,701 @@
+{
+  "rules_version": "candidate_event_rules_v0.11",
+  "event_type_priority": [
+    "EQUITY_HOLDING_PROXY_RELEASE",
+    "EQUITY_HOLDING_PROXY",
+    "ABSORPTION_MERGER",
+    "MAJOR_ASSET_RESTRUCTURING",
+    "CONTROL_CHANGE",
+    "OVERALL_CHANGE",
+    "JOINT_STOCK_COMPANY_ESTABLISHMENT",
+    "LIMITED_COMPANY_ESTABLISHMENT",
+    "CAPITAL_REDUCTION",
+    "CAPITAL_INCREASE",
+    "EQUITY_TRANSFER",
+    "SHARE_CAPITAL_CHANGE",
+    "LISTING_OR_DIRECTIONAL_FINANCING"
+  ],
+  "event_types": {
+    "LIMITED_COMPANY_ESTABLISHMENT": {
+      "terms": [
+        "有限公司设立情况",
+        "有限公司设立程序",
+        "有限责任公司设立",
+        "公司前身设立",
+        "前身设立",
+        "有限公司设立"
+      ]
+    },
+    "JOINT_STOCK_COMPANY_ESTABLISHMENT": {
+      "terms": [
+        "股份公司的设立情况",
+        "股份有限公司的设立情况",
+        "股份公司设立情况",
+        "股份有限公司设立",
+        "变更设立为股份有限公司",
+        "发起设立股份有限公司"
+      ]
+    },
+    "OVERALL_CHANGE": {
+      "terms": [
+        "整体变更为股份有限公司",
+        "整体变更设立为股份公司",
+        "整体变更",
+        "整体改制"
+      ]
+    },
+    "CAPITAL_INCREASE": {
+      "terms": [
+        "第一次增资",
+        "第二次增资",
+        "第三次增资",
+        "增资至",
+        "增资情况",
+        "增资扩股",
+        "增加注册资本",
+        "新增注册资本",
+        "增发股份",
+        "增资"
+      ]
+    },
+    "CAPITAL_REDUCTION": {
+      "terms": [
+        "减少注册资本",
+        "减资"
+      ]
+    },
+    "EQUITY_TRANSFER": {
+      "terms": [
+        "第一次股权转让",
+        "第二次股权转让",
+        "第三次股权转让",
+        "股权转让协议",
+        "股份转让协议",
+        "股权转让",
+        "股份转让",
+        "转让其持有",
+        "受让股权",
+        "受让股份"
+      ]
+    },
+    "SHARE_CAPITAL_CHANGE": {
+      "terms": [
+        "资本公积转增股本",
+        "第一次资本公积转增股本",
+        "股本增加",
+        "股本变更",
+        "注册资本变更",
+        "转增股本"
+      ]
+    },
+    "ABSORPTION_MERGER": {
+      "terms": [
+        "吸收合并昆山谷捷情况",
+        "吸收合并",
+        "被吸收合并"
+      ]
+    },
+    "EQUITY_HOLDING_PROXY": {
+      "terms": [
+        "历史沿革中存在股份代持",
+        "历史沿革中存在股权代持",
+        "股权代持",
+        "股份代持",
+        "代持情况"
+      ]
+    },
+    "EQUITY_HOLDING_PROXY_RELEASE": {
+      "terms": [
+        "股权代持已解除",
+        "代持解除",
+        "解除股权代持",
+        "解除股份代持"
+      ]
+    },
+    "CONTROL_CHANGE": {
+      "terms": [
+        "报告期内控制权变动情况",
+        "控制权变动",
+        "实际控制人变更",
+        "控股股东变更"
+      ]
+    },
+    "MAJOR_ASSET_RESTRUCTURING": {
+      "terms": [
+        "报告期内重大资产重组情况",
+        "重大资产重组"
+      ]
+    },
+    "LISTING_OR_DIRECTIONAL_FINANCING": {
+      "terms": [
+        "报告期内发行融资情况",
+        "股票定向发行",
+        "定向发行",
+        "发行融资",
+        "股票发行"
+      ]
+    }
+  },
+  "type_suppression": {
+    "LIMITED_COMPANY_ESTABLISHMENT": [
+      "JOINT_STOCK_COMPANY_ESTABLISHMENT",
+      "OVERALL_CHANGE"
+    ],
+    "JOINT_STOCK_COMPANY_ESTABLISHMENT": [
+      "OVERALL_CHANGE"
+    ],
+    "EQUITY_HOLDING_PROXY": [
+      "EQUITY_HOLDING_PROXY_RELEASE"
+    ],
+    "SHARE_CAPITAL_CHANGE": [
+      "OVERALL_CHANGE"
+    ]
+  },
+  "section_detection": {
+    "heading_max_chars": 150,
+    "heading_suffixes": [
+      "设立情况",
+      "股权转让",
+      "增资",
+      "减资",
+      "整体变更",
+      "吸收合并情况",
+      "资本公积转增股本",
+      "发行融资情况",
+      "控制权变动情况",
+      "重大资产重组情况"
+    ],
+    "combined_event_markers": [
+      "股权转让和增资",
+      "股权转让及增资",
+      "同时增资",
+      "并增资"
+    ],
+    "generic_summary_terms": [
+      "公司设立及报告期内的股本和股东变化情况",
+      "发行人设立及报告期内股本演变情况",
+      "报告期内的股本和股东变化情况",
+      "公司设立及报告期内股本、股东变化情况和成立以来重要事件",
+      "发行人报告期内的股本演变情况"
+    ],
+    "background_heading_terms": [
+      "吸收合并前",
+      "具体内容及履行的法定程序",
+      "对发行人的影响",
+      "评估值调整",
+      "审验情况",
+      "验资情况",
+      "基本情况"
+    ],
+    "generic_child_attach_page_gap": 3,
+    "max_section_units": 260,
+    "procedural_narrative_terms": [
+      "签署",
+      "签订",
+      "召开股东会",
+      "召开董事会",
+      "审议通过",
+      "支付",
+      "缴款",
+      "到账",
+      "办理工商变更",
+      "完成工商变更",
+      "办理完毕工商变更",
+      "取得营业执照",
+      "出具",
+      "验资",
+      "审验",
+      "评估",
+      "核准",
+      "登记"
+    ],
+    "standalone_dated_event_markers": [
+      "第一次股权转让",
+      "第二次股权转让",
+      "第三次股权转让",
+      "第一次增资",
+      "第二次增资",
+      "第三次增资",
+      "整体变更",
+      "股份公司设立",
+      "有限公司设立",
+      "资本公积转增股本",
+      "吸收合并"
+    ]
+  },
+  "negative_disclosure": {
+    "probe_units": 10,
+    "patterns": [
+      "未发生.*重大资产重组",
+      "不存在.*重大资产重组",
+      "未发生.*控制权变动",
+      "未发生变动",
+      "不存在.*控制权变动",
+      "不涉及.*重大资产重组"
+    ]
+  },
+  "context_exclusions": {
+    "equity_transfer_venue_terms": [
+      "全国中小企业股份转让系统",
+      "全国股转系统",
+      "股份转让系统挂牌",
+      "公开转让的公告",
+      "挂牌并公开转让"
+    ]
+  },
+  "entity_roles": {
+    "service_provider_terms": [
+      "会计师事务所",
+      "资产评估有限公司",
+      "资产评估事务所",
+      "律师事务所",
+      "审计机构",
+      "评估机构",
+      "验资机构"
+    ],
+    "service_provider_action_terms": [
+      "出具",
+      "审验",
+      "评估",
+      "验资",
+      "审计",
+      "复核"
+    ],
+    "issuer_transaction_terms": [
+      "召开股东会",
+      "召开董事会",
+      "注册资本由",
+      "新增注册资本由",
+      "股本由",
+      "完成工商变更",
+      "办理完毕工商变更"
+    ],
+    "subsidiary_markers": [
+      "控股子公司",
+      "全资子公司",
+      "子公司",
+      "孙公司",
+      "下属公司"
+    ],
+    "other_entity_subject_patterns": [
+      "(?:^|[，。；])(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,24}?)(?:(?:19|20)\\d{2}年)?年度股东大会",
+      "(?:^|[，。；])(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,24}?)(?:股东大会|董事会)(?:审议|通过|决议)",
+      "(?:^|[，。；])(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,24}?)总股本(?:变更|增加|减少)",
+      "(?:^|[，。；])(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,24}?)注册资本(?:变更|增加|减少)",
+      "(?:^|[，。；、])(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}?(?:有限责任公司|有限公司|有限))(?:的)?(?:成立|设立情况|设立)"
+    ],
+    "generic_issuer_subjects": [
+      "公司",
+      "发行人",
+      "本公司",
+      "股份公司",
+      "有限公司"
+    ],
+    "service_provider_support_terms": [
+      "本次整体变更",
+      "对本次整体变更",
+      "本次增资",
+      "本次股权转让",
+      "本次股份转让",
+      "本次吸收合并",
+      "验资报告",
+      "审验报告",
+      "评估报告"
+    ],
+    "company_short_name_business_suffixes": [
+      "股份",
+      "科技",
+      "创新",
+      "电机",
+      "测控",
+      "锻造",
+      "新材",
+      "材料",
+      "智能",
+      "电子",
+      "信息",
+      "装备",
+      "机械",
+      "医药",
+      "生物",
+      "能源",
+      "公司"
+    ],
+    "subject_cleanup_prefixes": [
+      "同意",
+      "审议通过",
+      "经审议通过",
+      "吸收合并后",
+      "本次吸收合并后",
+      "本次分配后",
+      "本次增资后",
+      "本次转让后",
+      "转让后",
+      "变更后",
+      "完成后",
+      "截至报告期末",
+      "截至本招股说明书签署日",
+      "公司前身",
+      "发行人前身",
+      "本公司前身",
+      "前身"
+    ],
+    "subject_cleanup_suffixes": [
+      "的",
+      "之"
+    ],
+    "predecessor_legal_suffixes": [
+      "有限责任公司",
+      "有限公司",
+      "有限"
+    ],
+    "predecessor_relation_patterns": [
+      "(?:公司|发行人|本公司)(?:系|是)?由(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}?)(?:整体变更|变更设立)",
+      "(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}?)(?:系发行人前身|为发行人前身|作为发行人前身)",
+      "发行人前身(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}?)(?:于|成立|设立|整体变更)",
+      "公司前身(?P<name>[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}?)(?:于|成立|设立|整体变更)"
+    ],
+    "minimum_predecessor_core_length": 2
+  },
+  "date_roles": {
+    "resolution_date": [
+      "股东会",
+      "董事会",
+      "决议",
+      "审议"
+    ],
+    "agreement_date": [
+      "签署",
+      "签订",
+      "协议",
+      "合同"
+    ],
+    "payment_date": [
+      "缴款",
+      "支付",
+      "到账",
+      "实缴",
+      "出资到位"
+    ],
+    "verification_date": [
+      "验资",
+      "审验",
+      "验资报告"
+    ],
+    "registration_date": [
+      "工商变更",
+      "变更登记",
+      "核准",
+      "市场监督管理局",
+      "营业执照"
+    ],
+    "announcement_date": [
+      "公告",
+      "发布"
+    ],
+    "effective_date": [
+      "实施完成",
+      "完成本次",
+      "办理完毕"
+    ]
+  },
+  "date_role_precedence": [
+    "event_period",
+    "resolution_date",
+    "agreement_date",
+    "registration_date",
+    "effective_date",
+    "verification_date",
+    "payment_date",
+    "announcement_date",
+    "other_date"
+  ],
+  "fallback": {
+    "before_units": 2,
+    "after_units": 18
+  },
+  "merge": {
+    "period_match_page_gap": 12,
+    "no_period_page_gap": 2,
+    "title_similarity": 0.58,
+    "absorption_merger_page_gap": 20,
+    "timeline_support_page_gap": 12,
+    "service_provider_support_page_gap": 3,
+    "consequence_attachment": [
+      {
+        "parent_type": "ABSORPTION_MERGER",
+        "child_type": "SHARE_CAPITAL_CHANGE",
+        "markers": [
+          "吸收合并后",
+          "本次吸收合并后"
+        ],
+        "max_page_gap": 4
+      },
+      {
+        "parent_type": "OVERALL_CHANGE",
+        "child_type": "SHARE_CAPITAL_CHANGE",
+        "markers": [
+          "整体变更后",
+          "本次整体变更后"
+        ],
+        "max_page_gap": 3
+      },
+      {
+        "parent_type": "CAPITAL_INCREASE",
+        "child_type": "SHARE_CAPITAL_CHANGE",
+        "markers": [
+          "增资后",
+          "本次增资后"
+        ],
+        "max_page_gap": 3
+      }
+    ]
+  },
+  "review": {
+    "low_confidence_threshold": 0.7,
+    "undated_event_types_allowed": [
+      "EQUITY_HOLDING_PROXY"
+    ],
+    "scope_limitation_requires_review": false
+  },
+  "shareholder_evidence_categories": {
+    "EQUITY_STRUCTURE": {
+      "terms": [
+        "股权结构",
+        "股本结构",
+        "股东及持股情况"
+      ]
+    },
+    "MAJOR_SHAREHOLDERS": {
+      "terms": [
+        "持有发行人5%以上",
+        "持股5%以上",
+        "主要股东",
+        "前十名股东"
+      ]
+    },
+    "PRIVATE_FUND_SHAREHOLDERS": {
+      "terms": [
+        "私募投资基金",
+        "基金备案",
+        "基金管理人",
+        "备案编码"
+      ]
+    },
+    "NEW_SHAREHOLDERS": {
+      "terms": [
+        "新增股东",
+        "提交申请前12个月",
+        "申报前十二个月"
+      ]
+    },
+    "ACTUAL_CONTROLLER": {
+      "terms": [
+        "控股股东",
+        "实际控制人",
+        "共同实际控制人"
+      ]
+    },
+    "SHAREHOLDING_TABLE": {
+      "terms": [
+        "持股数量",
+        "股份数量",
+        "持股比例",
+        "发行前",
+        "发行后"
+      ]
+    }
+  },
+  "shareholder_evidence": {
+    "context_before_units": 2,
+    "context_after_units": 16,
+    "merge_page_gap": 1,
+    "merge_unit_gap": 24,
+    "max_block_units": 90,
+    "max_records_per_category": 2,
+    "duplicate_similarity": 0.76
+  },
+  "summary_disclosures": {
+    "timeline_row_patterns": [
+      "^\\d{1,2}(?:19|20)\\d{2}年\\d{1,2}月\\d{1,2}日",
+      "^\\d{1,2}(?:19|20)\\d{2}年\\d{1,2}月",
+      "^\\d{1,2}(?:19|20)\\d{2}年"
+    ],
+    "aggregate_summary_patterns": [
+      "进行了[一二两三四五六七八九十\\d]+次股权转让",
+      "进行了[一二两三四五六七八九十\\d]+次股份转让",
+      "进行了[一二两三四五六七八九十\\d]+次增资",
+      "历经[一二两三四五六七八九十\\d]+次股权转让",
+      "自设立至.*进行了.*股权转让",
+      "自设立至.*进行了.*增资"
+    ],
+    "cross_reference_patterns": [
+      "参见.*(?:公开转让说明书|招股说明书|本节|本章)",
+      "详见.*(?:公开转让说明书|招股说明书|本节|本章)",
+      "具体见.*(?:公开转让说明书|招股说明书|本节|本章)",
+      "之[“\\\"].*之[“\\\"]"
+    ],
+    "transaction_detail_patterns": [
+      "\\d+(?:\\.\\d+)?%",
+      "\\d+(?:,\\d{3})*(?:\\.\\d+)?万元",
+      "\\d+(?:,\\d{3})*(?:\\.\\d+)?万股",
+      "召开股东会",
+      "召开董事会",
+      "签署.*协议",
+      "完成工商变更",
+      "办理完毕工商变更"
+    ],
+    "classification_wrapper_terms": [
+      "发行人报告期内的重大资产重组情况",
+      "报告期内重大资产重组情况",
+      "发行融资情况",
+      "报告期内发行融资情况"
+    ],
+    "cross_reference_probe_units": 3,
+    "context_after_units": 4,
+    "metadata_date_patterns": [
+      "^整体变更设立日期(?:19|20)\\d{2}年",
+      "^股份公司成立日期(?:19|20)\\d{2}年",
+      "^股份有限公司成立日期(?:19|20)\\d{2}年"
+    ],
+    "service_provider_procedure_reason": "审计、验资或评估等中介程序作为支持证据，不单独生成业务候选",
+    "other_entity_event_reason": "明确事件主体为发行人以外的公司或子公司，不进入发行人业务候选",
+    "timeline_existing_title_similarity": 0.72,
+    "service_provider_probe_units": 7,
+    "service_provider_report_terms": [
+      "会计师事务所",
+      "验资报告",
+      "验字",
+      "审验",
+      "出具",
+      "验资机构"
+    ]
+  },
+  "event_date_selection": {
+    "LIMITED_COMPANY_ESTABLISHMENT": [
+      "registration_date",
+      "event_period",
+      "resolution_date",
+      "agreement_date",
+      "verification_date",
+      "other_date"
+    ],
+    "JOINT_STOCK_COMPANY_ESTABLISHMENT": [
+      "registration_date",
+      "effective_date",
+      "event_period",
+      "resolution_date",
+      "verification_date",
+      "other_date"
+    ],
+    "OVERALL_CHANGE": [
+      "registration_date",
+      "effective_date",
+      "event_period",
+      "resolution_date",
+      "verification_date",
+      "other_date"
+    ],
+    "CAPITAL_INCREASE": [
+      "event_period",
+      "resolution_date",
+      "agreement_date",
+      "registration_date",
+      "payment_date",
+      "verification_date",
+      "other_date"
+    ],
+    "CAPITAL_REDUCTION": [
+      "event_period",
+      "resolution_date",
+      "registration_date",
+      "other_date"
+    ],
+    "EQUITY_TRANSFER": [
+      "event_period",
+      "agreement_date",
+      "resolution_date",
+      "registration_date",
+      "payment_date",
+      "other_date"
+    ],
+    "SHARE_CAPITAL_CHANGE": [
+      "event_period",
+      "resolution_date",
+      "effective_date",
+      "registration_date",
+      "other_date"
+    ],
+    "ABSORPTION_MERGER": [
+      "event_period",
+      "resolution_date",
+      "registration_date",
+      "effective_date",
+      "agreement_date",
+      "other_date"
+    ],
+    "EQUITY_HOLDING_PROXY_RELEASE": [
+      "event_period",
+      "effective_date",
+      "resolution_date",
+      "other_date"
+    ],
+    "LISTING_OR_DIRECTIONAL_FINANCING": [
+      "event_period",
+      "resolution_date",
+      "announcement_date",
+      "registration_date",
+      "verification_date",
+      "other_date"
+    ],
+    "CONTROL_CHANGE": [
+      "event_period",
+      "effective_date",
+      "resolution_date",
+      "other_date"
+    ],
+    "MAJOR_ASSET_RESTRUCTURING": [
+      "event_period",
+      "resolution_date",
+      "registration_date",
+      "other_date"
+    ]
+  },
+  "semantic_event_equivalence": {
+    "groups": [
+      {
+        "types": [
+          "JOINT_STOCK_COMPANY_ESTABLISHMENT",
+          "OVERALL_CHANGE"
+        ],
+        "canonical_type": "OVERALL_CHANGE",
+        "overlap_or_page_gap": 3
+      }
+    ],
+    "canonicalization_evidence_terms": {
+      "JOINT_STOCK_COMPANY_ESTABLISHMENT": {
+        "canonical_type": "OVERALL_CHANGE",
+        "terms": [
+          "整体变更",
+          "变更为股份有限公司",
+          "变更为股份公司",
+          "净资产折股",
+          "折合股本",
+          "由有限公司变更为股份有限公司"
+        ]
+      }
+    }
+  },
+  "event_type_patterns": {
+    "LIMITED_COMPANY_ESTABLISHMENT": [
+      "(?:公司前身|发行人前身|本公司前身|前身)[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}(?:有限责任公司|有限公司|有限)的?设立情况",
+      "(?:(?:19|20)\\d{2}年(?:\\d{1,2}月)?[,，]?)?[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,24}(?:有限责任公司|有限公司|有限)(?:成立|设立)",
+      "(?:公司|发行人|本公司)?前身[\\u4e00-\\u9fffA-Za-z0-9（）()]{2,30}(?:有限责任公司|有限公司|有限)的?设立情况",
+      "(?<!股份)(?:有限责任公司|有限公司)的?设立情况"
+    ],
+    "JOINT_STOCK_COMPANY_ESTABLISHMENT": [
+      "股份有限公司的?设立情况",
+      "股份公司的?设立情况"
+    ]
+  }
+}

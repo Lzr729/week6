@@ -1,0 +1,11 @@
+{
+  "rules_version": "final_submission_rules_v0.1",
+  "expected_company_count": 7,
+  "expected_event_count": 26,
+  "expected_transaction_count": 27,
+  "required_numeric_failure_count": 0,
+  "required_pevc_candidate_minimum": 1,
+  "required_pevc_path_minimum": 1,
+  "equity_snapshot_policy": "NO_SNAPSHOT_WITHOUT_CONFIRMED_PARTY_RATIO_LINKAGE",
+  "build_status": "FINAL_JSON_READY"
+}

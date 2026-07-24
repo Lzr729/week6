@@ -1,0 +1,13 @@
+{
+  "rules_version": "numeric_validation_rules_v0.1.2",
+  "capital_tolerance_abs": 1.0,
+  "capital_tolerance_pct": 0.0001,
+  "consideration_tolerance_abs": 1.0,
+  "consideration_tolerance_pct": 0.005,
+  "source_event_count": 26,
+  "source_transaction_count": 27,
+  "unknown_value_policy": "NOT_APPLICABLE_NOT_INFERRED",
+  "disclosed_and_calculated_values_separated": true,
+  "invalid_ratio_policy": "QUARANTINE_NOT_REVIEW",
+  "chronology_policy": "INFORMATIONAL_NOT_REVIEW"
+}

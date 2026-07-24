@@ -1,0 +1,38 @@
+{
+  "rules_version": "pevc_path_rules_v0.3.2",
+  "eligible_transaction_types": [
+    "CAPITAL_INCREASE",
+    "DIRECTIONAL_FINANCING",
+    "EQUITY_TRANSFER"
+  ],
+  "strong_pevc_terms": [
+    "股权投资基金",
+    "创业投资基金",
+    "私募投资基金",
+    "私募基金",
+    "产业投资基金",
+    "并购基金",
+    "投资基金",
+    "创业投资"
+  ],
+  "medium_pevc_terms": [
+    "股权投资",
+    "创业投资",
+    "创投",
+    "投资管理",
+    "资产管理",
+    "资本管理",
+    "投资合伙"
+  ],
+  "unknown_policy": "MISSING_REVIEW_NOT_FAKE_ENTITY",
+  "evidence_first": true,
+  "exclude_issuer_self": true,
+  "split_compound_shareholder_names": true,
+  "recognize_fund_short_names": true,
+  "separate_pevc_and_non_pevc_outputs": true,
+  "strong_name_validation": {
+    "full_strong_term_match": true,
+    "fund_short_name_suffix": "基金",
+    "classification_validation_consistent": true
+  }
+}
