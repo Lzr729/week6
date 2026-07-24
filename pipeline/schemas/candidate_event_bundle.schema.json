@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "candidate_event_bundle.schema.json",
+  "title": "Candidate Event Generation Bundle v0.11",
+  "type": "object",
+  "$defs": {
+    "candidate_event": {
+      "type": "object",
+      "required": [
+        "candidate_event_id",
+        "company_id",
+        "source_patch_id",
+        "event_type_candidate",
+        "event_dates",
+        "pdf_page_start",
+        "pdf_page_end",
+        "primary_evidence_id",
+        "candidate_status"
+      ],
+      "properties": {
+        "candidate_event_id": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "string",
+          "pattern": "^\\d{6}$"
+        },
+        "event_type_candidate": {
+          "type": "string"
+        },
+        "event_dates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "candidate_status": {
+          "const": "AUTO_CANDIDATE"
+        },
+        "ordinal_labels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "event_date_primary_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_date_selection_basis": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "negative_disclosure": {
+      "type": "object",
+      "required": [
+        "negative_disclosure_id",
+        "company_id",
+        "event_type_candidate",
+        "evidence_text",
+        "record_status"
+      ],
+      "properties": {
+        "record_status": {
+          "const": "NEGATIVE_DISCLOSURE_NOT_CANDIDATE"
+        }
+      },
+      "additionalProperties": true
+    },
+    "candidate_evidence": {
+      "type": "object",
+      "required": [
+        "evidence_id",
+        "candidate_event_id",
+        "company_id",
+        "evidence_text",
+        "evidence_sha256"
+      ],
+      "additionalProperties": true
+    },
+    "shareholder_evidence": {
+      "type": "object",
+      "required": [
+        "shareholder_evidence_id",
+        "company_id",
+        "evidence_category",
+        "evidence_text"
+      ],
+      "additionalProperties": true
+    },
+    "summary_disclosure": {
+      "type": "object",
+      "required": [
+        "summary_disclosure_id",
+        "company_id",
+        "summary_kind",
+        "event_type_candidates",
+        "evidence_text",
+        "record_status"
+      ],
+      "properties": {
+        "record_status": {
+          "const": "SUMMARY_DISCLOSURE_NOT_BUSINESS_CANDIDATE"
+        }
+      },
+      "additionalProperties": true
+    },
+    "coverage_gap": {
+      "type": "object",
+      "required": [
+        "coverage_gap_id",
+        "company_id",
+        "source_summary_disclosure_id",
+        "disclosed_event_counts",
+        "represented_candidate_counts",
+        "missing_event_counts",
+        "record_status"
+      ],
+      "properties": {
+        "record_status": {
+          "const": "DISCLOSURE_COVERAGE_GAP"
+        },
+        "disclosed_event_counts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "missing_event_counts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "final_submission_bundle.schema.json",
+  "title": "Seven Companies Final Submission Bundle v0.1",
+  "type": "object",
+  "required": [
+    "build_id",
+    "build_status",
+    "company_count",
+    "event_count",
+    "transaction_count",
+    "source_run_ids"
+  ],
+  "additionalProperties": true
+}
