@@ -1,0 +1,72 @@
+{
+  "manifest_version": "1.0",
+  "company_count": 7,
+  "input_mode": "PAGINATED_TEXT_OFFLINE_REPLAY",
+  "records": [
+    {
+      "company_id": "001282",
+      "short_name": "三联锻造",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/001282_page_text.jsonl",
+      "page_count": 476,
+      "sha256": "ec243fe6c5011d45cc5e62f0cb586a5226af2d31cd60784c954b7b6c66e06ab2",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    },
+    {
+      "company_id": "301581",
+      "short_name": "黄山谷捷",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/301581_page_text.jsonl",
+      "page_count": 343,
+      "sha256": "4a2d19e6894eb33587361b6ca0f8cf29174ab0d445b4ca48eeeab9785ee74abd",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    },
+    {
+      "company_id": "603418",
+      "short_name": "友升股份",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/603418_page_text.jsonl",
+      "page_count": 398,
+      "sha256": "60db143b8792fe130f55d0555f1f4f1519e72c48d3026559774a444c60a04900",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    },
+    {
+      "company_id": "688758",
+      "short_name": "赛分科技",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/688758_page_text.jsonl",
+      "page_count": 468,
+      "sha256": "33b934a68410dd3e91d6123104e9ea9b179269a99e6521fd2b7c3359921b233e",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    },
+    {
+      "company_id": "688775",
+      "short_name": "影石创新",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/688775_page_text.jsonl",
+      "page_count": 555,
+      "sha256": "cac62d456a4ae8f689ef277866b361d8b52194e8a76ec5879d41fedc52dcc706",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    },
+    {
+      "company_id": "920100",
+      "short_name": "三协电机",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/920100_page_text.jsonl",
+      "page_count": 379,
+      "sha256": "4e3a589a46ab7df30ce32b64fd4a115ee8f312e459a26c4d68990856cb181cb2",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    },
+    {
+      "company_id": "920116",
+      "short_name": "星图测控",
+      "input_type": "PAGINATED_TEXT_JSONL",
+      "relative_path": "data/920116_page_text.jsonl",
+      "page_count": 365,
+      "sha256": "f680f59037ef7a0074130276f1e5e175c07e535beff9d2742cab363761b744bb",
+      "source_run_id": "CHAPTERLOC_V05_20260723_190258"
+    }
+  ],
+  "input_layout": "FLAT_DATA_DIRECTORY",
+  "file_name_pattern": "<security_code>_page_text.jsonl"
+}
