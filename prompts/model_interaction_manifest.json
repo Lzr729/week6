@@ -1,0 +1,72 @@
+{
+  "manifest_version": "1.0",
+  "records": [
+    {
+      "interaction_id": "MI-001",
+      "stage": "CANDIDATE_EVENT_REVIEW",
+      "prompt_file": "prompts/candidate_event_review_prompt.md",
+      "input_artifacts": [
+        "auto_output/candidate_events/runs/CANDIDATEEVENT_V11_20260723_224502/candidate_events_auto.jsonl",
+        "auto_output/candidate_events/runs/CANDIDATEEVENT_V11_20260723_224502/candidate_evidence_auto.jsonl"
+      ],
+      "structured_output_artifact": "review/candidate_events/frozen/CANDIDATEFREEZE_V1_20260723_225835/candidate_event_review_patch.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-002",
+      "stage": "STRUCTURED_EVENT_REVIEW",
+      "prompt_file": "prompts/structured_event_annotation_prompt.md",
+      "input_artifacts": [
+        "auto_output/structured_events/runs/STRUCTEVENT_V01_20260723_230629/transaction_records_auto.jsonl"
+      ],
+      "structured_output_artifact": "manual_gold/review_decisions_gold.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-003",
+      "stage": "NUMERIC_REVIEW",
+      "prompt_file": "prompts/numeric_review_prompt.md",
+      "input_artifacts": [
+        "auto_output/numeric_validation/runs/NUMVALID_V01_20260723_232038/numeric_validation_results.jsonl"
+      ],
+      "structured_output_artifact": "manual_gold/review_decisions_gold.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-004",
+      "stage": "PEVC_REVIEW",
+      "prompt_file": "prompts/pevc_identification_prompt.md",
+      "input_artifacts": [
+        "auto_output/pevc_paths/runs/PEVCPATH_V032_20260723_235402/investor_entities_auto.jsonl",
+        "auto_output/pevc_paths/runs/PEVCPATH_V032_20260723_235402/investment_paths_auto.jsonl"
+      ],
+      "structured_output_artifact": "manual_gold/pevc_paths_gold.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    },
+    {
+      "interaction_id": "MI-005",
+      "stage": "FINAL_MANUAL_REVIEW",
+      "prompt_file": "prompts/final_review_prompt.md",
+      "input_artifacts": [
+        "validation/review_queue/"
+      ],
+      "structured_output_artifact": "manual_gold/review_decisions_gold.jsonl",
+      "model_name": "UNKNOWN_NOT_RECORDED",
+      "model_parameters": "UNKNOWN_NOT_RECORDED",
+      "response_format": "STRUCTURED_JSONL_AND_XLSX",
+      "raw_response_availability": "STRUCTURED_OUTPUT_PRESERVED"
+    }
+  ]
+}
