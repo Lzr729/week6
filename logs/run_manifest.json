@@ -1,0 +1,232 @@
+{
+  "stages": {
+    "candidate_events": {
+      "run_id": "CANDIDATEEVENT_V11_20260723_224502",
+      "pipeline_version": "candidate_event_generation_v0.11",
+      "rules_version": "candidate_event_rules_v0.11",
+      "started_at": "2026-07-23T22:45:02+08:00",
+      "completed_at": "2026-07-23T22:45:04+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "source_page_text_run_id": "CHAPTERLOC_V05_20260723_190258",
+      "chapter_patch_file": ".\\review\\chapter_location\\chapter_location_review_patch.jsonl",
+      "pagination_patch_file": ".\\review\\chapter_location\\pagination_review_patch.jsonl",
+      "rules_file": ".\\pipeline\\configs\\candidate_event_rules.json",
+      "external_fragment_dir": "workspace\\CANDIDATEEVENT_V11_20260723_224502",
+      "auto_freeze_policy": "run_specific_immutable_directory",
+      "llm_called": false
+    },
+    "chapter_location": {
+      "run_id": "CHAPTERLOC_V05_20260723_190258",
+      "pipeline_version": "chapter_location_v0.5",
+      "rules_version": "chapter_locator_rules_v0.5",
+      "rules_sha256": "8c18fa8d42c69261341e0459d7b2996b334517db5b08d8e9699678daea4e122d",
+      "started_at": "2026-07-23T19:02:58+08:00",
+      "completed_at": "2026-07-23T19:03:30+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "reuse_run_id": "CHAPTERLOC_V04_20260723_183813",
+      "auto_freeze_policy": "run_specific_immutable_directory"
+    },
+    "numeric_validation": {
+      "run_id": "NUMVALID_V01_20260723_232038",
+      "pipeline_version": "transaction_numeric_validation_v0.1.2",
+      "source_structured_run_id": "STRUCTEVENT_V01_20260723_230629",
+      "completed_at": "2026-07-23T23:20:38+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "source_files": {
+        "events": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_records_auto.jsonl",
+          "sha256": "04aec773d46ad0cd89fb5cfd30c7e008065ad64ddebaf4af632ba1d2d05bb906"
+        },
+        "transactions": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\transaction_records_auto.jsonl",
+          "sha256": "76281508f3149c6e06a31b190454b82f3e048735308d425d0ade0187d9cb325f"
+        },
+        "parties": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_parties_auto.jsonl",
+          "sha256": "6723d2ab62b304a0e08aad5bb16cca5400757f56d10443d102d5d2c5b1f00338"
+        },
+        "numerics": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\numeric_facts_auto.jsonl",
+          "sha256": "e699aa91e94467e332664fe8f92a68d0002f549f513e95c896b737c68c008d34"
+        },
+        "dates": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_dates_auto.jsonl",
+          "sha256": "f672a876c369b7b20001d28032b19ae8d98809ec10deafcdab1ff7d41035d8f6"
+        },
+        "evidence": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_evidence_index.jsonl",
+          "sha256": "e36d26bc791a56154da9b31bf20929e1fcd555bf063b93a15b45e11c1fc2a54a"
+        },
+        "metrics": {
+          "path": ".\\validation\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\structured_event_metrics.json",
+          "sha256": "249155123ffc931fa3eb387f0df1b4d7ff4c5863b9979f6e0331aca6745a6f61"
+        }
+      },
+      "llm_called": false
+    },
+    "pevc_paths": {
+      "run_id": "PEVCPATH_V032_20260723_235402",
+      "pipeline_version": "pevc_path_identification_v0.3.2",
+      "source_structured_run_id": "STRUCTEVENT_V01_20260723_230629",
+      "source_numeric_run_id": "NUMVALID_V01_20260723_232038",
+      "completed_at": "2026-07-23T23:54:02+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "llm_called": false
+    },
+    "structured_events": {
+      "run_id": "STRUCTEVENT_V01_20260723_230629",
+      "pipeline_version": "structured_event_extraction_v0.2",
+      "source_freeze_id": "CANDIDATEFREEZE_V1_20260723_225835",
+      "source_frozen_dir": ".\\review\\candidate_events\\frozen\\CANDIDATEFREEZE_V1_20260723_225835",
+      "started_and_completed_at": "2026-07-23T23:06:29+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "source_events_sha256": "6e15be0d6d9e75c0e1225bab5a4f37edb5aeaf85db0ced3f068574a764cce128",
+      "source_evidence_sha256": "e36d26bc791a56154da9b31bf20929e1fcd555bf063b93a15b45e11c1fc2a54a",
+      "llm_called": false
+    }
+  },
+  "stage_runs": [
+    {
+      "run_id": "CHAPTERLOC_V05_20260723_190258",
+      "pipeline_version": "chapter_location_v0.5",
+      "rules_version": "chapter_locator_rules_v0.5",
+      "rules_sha256": "8c18fa8d42c69261341e0459d7b2996b334517db5b08d8e9699678daea4e122d",
+      "started_at": "2026-07-23T19:02:58+08:00",
+      "completed_at": "2026-07-23T19:03:30+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "reuse_run_id": "CHAPTERLOC_V04_20260723_183813",
+      "auto_freeze_policy": "run_specific_immutable_directory",
+      "stage": "chapter_location",
+      "selected_for_submission": true
+    },
+    {
+      "run_id": "CANDIDATEEVENT_V11_20260723_224502",
+      "pipeline_version": "candidate_event_generation_v0.11",
+      "rules_version": "candidate_event_rules_v0.11",
+      "started_at": "2026-07-23T22:45:02+08:00",
+      "completed_at": "2026-07-23T22:45:04+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "source_page_text_run_id": "CHAPTERLOC_V05_20260723_190258",
+      "chapter_patch_file": ".\\review\\chapter_location\\chapter_location_review_patch.jsonl",
+      "pagination_patch_file": ".\\review\\chapter_location\\pagination_review_patch.jsonl",
+      "rules_file": ".\\pipeline\\configs\\candidate_event_rules.json",
+      "external_fragment_dir": "workspace\\CANDIDATEEVENT_V11_20260723_224502",
+      "auto_freeze_policy": "run_specific_immutable_directory",
+      "llm_called": false,
+      "stage": "candidate_events",
+      "selected_for_submission": true
+    },
+    {
+      "run_id": "STRUCTEVENT_V01_20260723_230629",
+      "pipeline_version": "structured_event_extraction_v0.2",
+      "source_freeze_id": "CANDIDATEFREEZE_V1_20260723_225835",
+      "source_frozen_dir": ".\\review\\candidate_events\\frozen\\CANDIDATEFREEZE_V1_20260723_225835",
+      "started_and_completed_at": "2026-07-23T23:06:29+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "source_events_sha256": "6e15be0d6d9e75c0e1225bab5a4f37edb5aeaf85db0ced3f068574a764cce128",
+      "source_evidence_sha256": "e36d26bc791a56154da9b31bf20929e1fcd555bf063b93a15b45e11c1fc2a54a",
+      "llm_called": false,
+      "stage": "structured_events",
+      "selected_for_submission": true
+    },
+    {
+      "run_id": "NUMVALID_V01_20260723_232038",
+      "pipeline_version": "transaction_numeric_validation_v0.1.2",
+      "source_structured_run_id": "STRUCTEVENT_V01_20260723_230629",
+      "completed_at": "2026-07-23T23:20:38+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "source_files": {
+        "events": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_records_auto.jsonl",
+          "sha256": "04aec773d46ad0cd89fb5cfd30c7e008065ad64ddebaf4af632ba1d2d05bb906"
+        },
+        "transactions": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\transaction_records_auto.jsonl",
+          "sha256": "76281508f3149c6e06a31b190454b82f3e048735308d425d0ade0187d9cb325f"
+        },
+        "parties": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_parties_auto.jsonl",
+          "sha256": "6723d2ab62b304a0e08aad5bb16cca5400757f56d10443d102d5d2c5b1f00338"
+        },
+        "numerics": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\numeric_facts_auto.jsonl",
+          "sha256": "e699aa91e94467e332664fe8f92a68d0002f549f513e95c896b737c68c008d34"
+        },
+        "dates": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_dates_auto.jsonl",
+          "sha256": "f672a876c369b7b20001d28032b19ae8d98809ec10deafcdab1ff7d41035d8f6"
+        },
+        "evidence": {
+          "path": ".\\auto_output\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\event_evidence_index.jsonl",
+          "sha256": "e36d26bc791a56154da9b31bf20929e1fcd555bf063b93a15b45e11c1fc2a54a"
+        },
+        "metrics": {
+          "path": ".\\validation\\structured_events\\runs\\STRUCTEVENT_V01_20260723_230629\\structured_event_metrics.json",
+          "sha256": "249155123ffc931fa3eb387f0df1b4d7ff4c5863b9979f6e0331aca6745a6f61"
+        }
+      },
+      "llm_called": false,
+      "stage": "numeric_validation",
+      "selected_for_submission": true
+    },
+    {
+      "run_id": "PEVCPATH_V032_20260723_235402",
+      "pipeline_version": "pevc_path_identification_v0.3.2",
+      "source_structured_run_id": "STRUCTEVENT_V01_20260723_230629",
+      "source_numeric_run_id": "NUMVALID_V01_20260723_232038",
+      "completed_at": "2026-07-23T23:54:02+08:00",
+      "batch_status": "READY_WITH_REVIEW",
+      "llm_called": false,
+      "stage": "pevc_paths",
+      "selected_for_submission": true
+    }
+  ],
+  "source_file_hashes": {
+    "run_id": "BATCHCHECK_20260723_171135",
+    "hash_algorithm": "SHA-256",
+    "files": [
+      {
+        "file_name": "001282_三联锻造_IPO招股说明书.pdf",
+        "relative_path": "001282_三联锻造_IPO招股说明书.pdf",
+        "sha256": "facdf3d2d15600a9228130c038ea8a142e48461c6b7082bf2f91b8a8cf5285f8",
+        "size_bytes": 11690164
+      },
+      {
+        "file_name": "301581_黄山谷捷_IPO招股说明书.pdf",
+        "relative_path": "301581_黄山谷捷_IPO招股说明书.pdf",
+        "sha256": "4f6c6e629102d4253df9a6b35ed73e9dd0b86ba02f9abaad2327344401f58b37",
+        "size_bytes": 5702528
+      },
+      {
+        "file_name": "603418_友升股份_IPO招股说明书.pdf",
+        "relative_path": "603418_友升股份_IPO招股说明书.pdf",
+        "sha256": "d82a3450283f69b5f3dab2e46a4e71d884a0a7d44330a7cc60270912498efc67",
+        "size_bytes": 6002412
+      },
+      {
+        "file_name": "688758_赛分科技_IPO招股说明书.pdf",
+        "relative_path": "688758_赛分科技_IPO招股说明书.pdf",
+        "sha256": "94f21ca8a7568ef53ed3a73acb397f814b8dd7414c0d3686e217719480455a00",
+        "size_bytes": 8485662
+      },
+      {
+        "file_name": "688775_影石创新_IPO招股说明书.pdf",
+        "relative_path": "688775_影石创新_IPO招股说明书.pdf",
+        "sha256": "cb89d15a7ca304a5b727ec9359a940b71939ac663e3faa25efa050c07087b473",
+        "size_bytes": 10047657
+      },
+      {
+        "file_name": "920100_三协电机_IPO招股说明书.pdf",
+        "relative_path": "920100_三协电机_IPO招股说明书.pdf",
+        "sha256": "00d38ea73d07c46c06e39417b5b988ce7cb475068522fffa3bfa301d1f85abb3",
+        "size_bytes": 6520016
+      },
+      {
+        "file_name": "920116_星图测控_IPO招股说明书.pdf",
+        "relative_path": "920116_星图测控_IPO招股说明书.pdf",
+        "sha256": "0f3220d0f6da29abcbd3b9cd1c5229b31f3c5fc4e2dbd025565a590ab0213fff",
+        "size_bytes": 6405569
+      }
+    ]
+  }
+}

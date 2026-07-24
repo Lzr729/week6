@@ -1,0 +1,56 @@
+{
+  "overall": {
+    "selected_run_ids": {
+      "chapter_location": "CHAPTERLOC_V05_20260723_190258",
+      "candidate_events": "CANDIDATEEVENT_V11_20260723_224502",
+      "candidate_freeze": "CANDIDATEFREEZE_V1_20260723_225835",
+      "structured_events": "STRUCTEVENT_V01_20260723_230629",
+      "numeric_validation": "NUMVALID_V01_20260723_232038",
+      "pevc_paths": "PEVCPATH_V032_20260723_235402",
+      "final_assembly": "FINALASSEMBLY_V01_20260724_000052"
+    },
+    "auto": {
+      "candidate_events": 28,
+      "structured_events": 26,
+      "transactions": 27,
+      "numeric_validations": 81,
+      "pevc_entities": 2,
+      "pevc_paths": 2
+    },
+    "gold": {
+      "events": 26,
+      "transactions": 27,
+      "numeric_validations": 81,
+      "pevc_entities": 2,
+      "pevc_paths": 2,
+      "review_decisions": 19
+    },
+    "final": {
+      "company_count": 7,
+      "validation_status": "PASSED"
+    }
+  },
+  "chapter_location": {
+    "run_id": "CHAPTERLOC_V05_20260723_190258",
+    "page_manifest_count": 2984,
+    "pagination_record_count": 2984,
+    "issuer_master_section_count": 7,
+    "heading_candidate_count": 3292,
+    "retained_chapter_candidate_count": 95,
+    "primary_chapter_candidate_count": 41,
+    "required_primary_candidate_count": 14,
+    "required_candidate_page_count": 156,
+    "required_candidate_mapped_page_count": 136,
+    "required_candidate_pagination_coverage_rate": 0.8718,
+    "review_queue_count": 16
+  },
+  "candidate_events": {
+    "candidate_events": 28,
+    "candidate_evidence": 42,
+    "shareholder_evidence": 65,
+    "negative_disclosures": 2,
+    "summary_disclosures": 23,
+    "coverage_gaps": 2,
+    "review_items": 2
+  }
+}
