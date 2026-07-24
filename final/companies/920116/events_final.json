@@ -1,0 +1,69 @@
+{
+  "company_id": "920116",
+  "company_name": "星图测控",
+  "record_count": 1,
+  "records": [
+    {
+      "event_id": "EVT-920116-0001",
+      "candidate_event_id": "CE-920116-0001",
+      "company_id": "920116",
+      "company_short_name": "星图测控",
+      "event_type": "LISTING_OR_DIRECTIONAL_FINANCING",
+      "event_type_candidates": [
+        "LISTING_OR_DIRECTIONAL_FINANCING"
+      ],
+      "event_group": "FINANCING",
+      "event_period": "2023-05-16",
+      "event_date_text": "2023-05-16",
+      "event_date_primary_role": "event_period",
+      "event_dates": {
+        "event_period": [
+          "2023-05-16",
+          "2023",
+          "2023-05-08"
+        ],
+        "announcement_date": [
+          "2023-05-16",
+          "2023-05-19"
+        ],
+        "resolution_date": [
+          "2023-03-28",
+          "2023-04-12",
+          "2023"
+        ],
+        "other_date": [
+          "2023",
+          "2023-04-26"
+        ],
+        "verification_date": [
+          "2023-05-09",
+          "2023-05-08"
+        ]
+      },
+      "event_title": "2023 年 5 月 16 日，公司在全国股转系统网站发布《股票定向发行新增股份在全国",
+      "disclosure_scope": "PARTIAL_DISCLOSURE_LISTING_AND_REPORTING_PERIOD",
+      "ordinal_labels": [
+        "第一次"
+      ],
+      "pdf_page_start": 35,
+      "pdf_page_end": 36,
+      "printed_page_start": "1-1-35",
+      "printed_page_end": "1-1-36",
+      "printed_page_value_type": "DISCLOSED",
+      "primary_evidence_id": "EVD-920116-0001-01",
+      "supporting_evidence_ids": [
+        "EVD-920116-0001-02",
+        "EVD-920116-0001-03",
+        "EVD-920116-0001-04",
+        "EVD-920116-0001-05"
+      ],
+      "entity_scope": "ISSUER_OR_UNRESOLVED",
+      "candidate_confidence": 0.95,
+      "extraction_status": "AUTO_STRUCTURED_WITH_REVIEW",
+      "review_required": true,
+      "review_reasons": [
+        "事件来源属于部分披露范围"
+      ]
+    }
+  ]
+}

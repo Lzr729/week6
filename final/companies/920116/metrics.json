@@ -1,0 +1,18 @@
+{
+  "company_id": "920116",
+  "company_name": "星图测控",
+  "event_count": 1,
+  "transaction_count": 1,
+  "party_count": 3,
+  "numeric_fact_count": 2,
+  "numeric_validation_count": 3,
+  "calculated_fact_count": 0,
+  "investor_entity_count": 2,
+  "investment_path_count": 2,
+  "pevc_entity_count": 0,
+  "pevc_path_count": 0,
+  "coverage_gap_count": 0,
+  "review_record_count": 0,
+  "equity_snapshot_status": "NOT_CONSTRUCTIBLE_FROM_CURRENT_DISCLOSED_FACTS",
+  "build_status": "FINAL_JSON_READY"
+}
